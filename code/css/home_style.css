@@ -1,0 +1,67 @@
+/*Configuración General del CSS*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-text-color: white;
+}
+
+/*********
+* Header *
+*********/
+.header_home {
+    background-color: rgb(64,64,64);
+    display: flex;
+    color: var(--header-text-color);
+}
+
+/*Col-4 parte izquierda*/
+.logo_header {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+}
+
+#company_title {
+    font-size: 25px;
+    margin-left: 1em;
+}
+
+/*Col-8 parte derecha*/
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_header a {
+    text-decoration: none;
+    color: var(--header-text-color);
+}
+
+.menu_header a:hover {
+    color: orange;
+}
+
+/*******
+* Body *
+*******/
+
+/*Carrusel de imagenes*/
+.slider {
+    border: 1px solid black;
+    display: flex;
+    height: 25em;
+    justify-content: center;
+}
+
+.slider_block {
+    display: flex;
+    border: 1px solid red;
+    background-color: lightskyblue;
+    justify-content: center;
+    align-items: center;
+}
