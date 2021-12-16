@@ -46,13 +46,6 @@
     color: orange;
 }
 
-/*nav li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-}*/
-
 /*******
 * Body *
 *******/
@@ -66,19 +59,27 @@
 }
 
 .slider_block {
-    display: flex;
     border: 1px solid red;
     background-color: lightskyblue;
+}
+
+#boto_carrusel_esquerre {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#boto_carrusel_dret {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#text_carrusel {
+    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .slider_block #carrusel{
-    color: red;
-}
-
-#lt {
-    float: left !important;
+    /*color: red;*/
 }
 
 /*Events con el ratón*/
@@ -86,3 +87,48 @@
     color: red;
     cursor: pointer;
 }
+
+.boto_carrusel{
+    color: white;
+}
+
+/*Camp de les notícies*/
+
+/*Camp general que abarca el títol i les notícies concretes*/
+.bloc_noticies {
+    border: 1px solid black;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Títol del camp general*/
+.apartat_noticies {
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    background-color: yellowgreen;
+}
+
+/*Bloc on es troben les notícies concretes, cada una d'elles*/
+.noticies {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+
+.noticia_concreta {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.imatge_noticia {
+    background-color: aquamarine;
+    padding-right: 10em;
+    padding-bottom: 3em;
+}
+
