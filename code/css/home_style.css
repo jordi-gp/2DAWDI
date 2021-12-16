@@ -46,6 +46,13 @@
     color: orange;
 }
 
+/*nav li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}*/
+
 /*******
 * Body *
 *******/
@@ -64,4 +71,18 @@
     background-color: lightskyblue;
     justify-content: center;
     align-items: center;
+}
+
+.slider_block #carrusel{
+    color: red;
+}
+
+#lt {
+    float: left !important;
+}
+
+/*Events con el ratón*/
+#lt:hover, #gt:hover {
+    color: red;
+    cursor: pointer;
 }
