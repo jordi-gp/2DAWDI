@@ -61,26 +61,19 @@
 .slider_block {
     border: 1px solid red;
     background-color: lightskyblue;
+    display: flex;
+    align-items: center;
 }
 
-#boto_carrusel_esquerre {
-    display: flex;
-    justify-content: flex-start;
+#boto_carrusel_esquerre{
 }
 
 #boto_carrusel_dret {
-    display: flex;
-    justify-content: flex-end;
 }
 
 #text_carrusel {
-    display: flex;
-    justify-content: center;
 }
 
-.slider_block #carrusel{
-    /*color: red;*/
-}
 
 /*Events con el ratón*/
 #lt:hover, #gt:hover {
@@ -97,7 +90,7 @@
 /*Camp general que abarca el títol i les notícies concretes*/
 .bloc_noticies {
     border: 1px solid black;
-    height: 20em;
+    height: 40em;
     display: flex;
     flex-direction: column;
 }
@@ -114,7 +107,7 @@
 .noticies {
     border: 1px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     margin-bottom: 1em;
     flex-wrap: wrap;
@@ -132,3 +125,28 @@
     padding-bottom: 3em;
 }
 
+/*********
+* Footer *
+*********/
+.footer_pag {
+    border: 1px solid red;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_cont {
+}
+
+.redes_sociales {
+    display: flex;
+    align-items: center;
+}
+
+.redes_sociales img {
+    width: 90px;
+}
+
+.redes_sociales img:hover{
+    filter: brightness(1.5);
+}
