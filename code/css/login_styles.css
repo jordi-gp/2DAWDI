@@ -1,0 +1,70 @@
+/*Configuración General del CSS*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient-background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    --gradient-form: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+body {
+    height: 100vh;
+    background: var(--gradient-background);
+}
+
+.bloc_form {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-form);
+    border-radius: 2%;
+}
+
+.info_form {
+    display: flex;
+    height: 40vh;
+    border-radius: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+input[type="text"], input[type="password"]{
+    width: 30vh;
+    height: 5vh;
+    margin-top: 1em;
+}
+
+#enviar {
+    background-color: #2dcd14;
+    margin-top: 1em;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#enviar:hover {
+    cursor: pointer;
+    background-color: #2bf20c;
+}
