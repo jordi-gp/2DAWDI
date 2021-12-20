@@ -1,0 +1,172 @@
+/*Configuración General del CSS*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-text-color: white;
+    --color-menu: rgb(64,64,64);
+    --color-text-menu: orange;
+}
+
+@font-face {
+    font-family: "Press_2P";
+    src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
+}
+
+/*********
+* Header *
+*********/
+.header_home {
+    background-color: #252525;
+    display: flex;
+    color: var(--header-text-color);
+    z-index: 20;
+}
+
+/*Col-4 parte izquierda*/
+.logo_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#company_title {
+    font-size: 25px;
+}
+
+/*Col-8 parte derecha*/
+#pagAct {
+    color: var(--color-text-menu);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.desplegable{
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    background-color: var(--color-menu);
+}
+
+.menu_header a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    padding-left: 1em;
+}
+
+.menu_header a:hover {
+    color: var(--color-text-menu);
+}
+
+/*******
+* Body *
+*******/
+body {
+    background-color: var(--color-menu);
+    height: 100vh;
+}
+
+.titol-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDDB49;
+}
+
+.joc {
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.joc img {
+    align-self: center;
+}
+
+.imatge_joc {
+    border: 2px solid black;
+    border-radius: 1em;
+    margin-right: 1em;
+    background-color: white;
+}
+
+.info_joc {
+    border: 2px solid black;
+    border-radius: 1em;
+    margin-left: 1em;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.info_joc > h1 {
+    font-family: "Press_2P";
+    font-size: 1.7em;
+}
+
+.info_joc > button {
+    margin-top: 2vh;
+    text-decoration: none;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.info_joc > button:hover {
+    cursor: pointer;
+    filter: grayscale(40%);
+}
+
+#dumstrang {
+    width: 15em;
+    /* border: 1px solid red; */
+}
+
+#gravity_long {
+    width: 15em;
+    margin-top: -1em;
+    /* border: 1px solid red; */
+}
+
+/*********
+* Footer *
+*********/
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 8em;
+    width: 100%;
+    background-color: #252525;
+    color: white;
+}
+
+.info_footer {
+    border: 1px solid blue;
+}
+
+.informacio_extra {
+    border: 1px solid red;
+}
+
+.lista_info > li {
+    list-style: none;
+}
+
+.lista_info > li > a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.lista_info > li > a:hover {
+    color: orange;
+}
