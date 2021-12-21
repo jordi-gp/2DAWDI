@@ -8,6 +8,10 @@
     --header-text-color: white;
     --color-menu: rgb(64,64,64);
     --color-text-menu: orange;
+    --color-fondo-menu: #252525;
+    --img-targ-backg: #C4C1BF;
+    --info-targ-backg: white;
+    --span-text: orange;
 }
 
 @font-face {
@@ -19,8 +23,9 @@
 * Header *
 *********/
 .header_home {
-    background-color: #252525;
+    background-color: var(--color-fondo-menu);
     display: flex;
+    width: 100%;
     color: var(--header-text-color);
     z-index: 20;
 }
@@ -46,16 +51,8 @@
 .menu_header {
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    align-items: center;
-}
-
-.desplegable{
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    color: white;
-    background-color: var(--color-menu);
+    justify-content: flex-end;  
+    align-items: flex-end;
 }
 
 .menu_header a {
@@ -95,62 +92,79 @@ body {
 }
 
 .imatge_joc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid black;
     border-radius: 1em;
     margin-right: 1em;
-    background-color: white;
+    background-color: var(--img-targ-backg);
 }
 
 .info_joc {
     border: 2px solid black;
     border-radius: 1em;
     margin-left: 1em;
-    background-color: white;
+    background-color: var(--info-targ-backg);
     flex-wrap: wrap;
+    
 }
 
 .info_joc > h1 {
     font-family: "Press_2P";
+    padding-top: 0.5em;
     font-size: 1.7em;
 }
 
-.info_joc > button {
-    margin-top: 2vh;
+.info_joc > p {
+    margin-top: 3vh;
+    line-height: 25px;
+}
+
+.joc_destacat {
+    color: var(--span-text);
+    font-weight: bold;
+}
+
+.button_mes_info > button {
     text-decoration: none;
     background-color: yellow;
     border-radius: 5px;
 }
 
-.info_joc > button:hover {
+.button_mes_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.button_mes_info > button:hover {
     cursor: pointer;
     filter: grayscale(40%);
 }
 
 #dumstrang {
     width: 15em;
-    /* border: 1px solid red; */
 }
 
 #gravity_long {
-    width: 15em;
-    margin-top: -1em;
-    /* border: 1px solid red; */
+    width: 12em;
 }
 
 /*********
 * Footer *
 *********/
 footer {
-    position: absolute;
     bottom: 0;
     height: 8em;
     width: 100%;
-    background-color: #252525;
+    background-color: var(--color-fondo-menu);
     color: white;
 }
 
 .info_footer {
     border: 1px solid blue;
+    padding-bottom: 15px;
 }
 
 .informacio_extra {
@@ -168,5 +182,5 @@ footer {
 }
 
 .lista_info > li > a:hover {
-    color: orange;
+    color: var(--color-text-menu);
 }
