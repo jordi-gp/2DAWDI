@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+}
+
 :root{
-    --header-text-color: white;
+    --header-footer-text-color: white;
     --color-menu: rgb(64,64,64);
     --color-text-menu: orange;
     --color-fondo-menu: #252525;
@@ -22,12 +26,9 @@
 /*********
 * Header *
 *********/
-.header_home {
+.header {
     background-color: var(--color-fondo-menu);
-    display: flex;
-    width: 100%;
-    color: var(--header-text-color);
-    z-index: 20;
+    color: var(--header-footer-text-color);
 }
 
 /*Col-4 parte izquierda*/
@@ -87,7 +88,7 @@ body {
     margin-top: 1em;
 }
 
-.joc img {
+.joc > img {
     align-self: center;
 }
 
@@ -97,14 +98,12 @@ body {
     align-items: center;
     border: 2px solid black;
     border-radius: 1em;
-    margin-right: 1em;
     background-color: var(--img-targ-backg);
 }
 
 .info_joc {
     border: 2px solid black;
     border-radius: 1em;
-    margin-left: 1em;
     background-color: var(--info-targ-backg);
     flex-wrap: wrap;
     
@@ -155,16 +154,12 @@ body {
 * Footer *
 *********/
 footer {
-    bottom: 0;
-    height: 8em;
+    height: 10em;
     width: 100%;
+    bottom: 0;
+    position: absolute;
+    color: var(--header-footer-text-color);
     background-color: var(--color-fondo-menu);
-    color: white;
-}
-
-.info_footer {
-    border: 1px solid blue;
-    padding-bottom: 15px;
 }
 
 .informacio_extra {
