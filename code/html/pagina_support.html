@@ -9,42 +9,82 @@
     <title>Pàgina de Suport</title>
 </head>
 <header>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2 logo_header">
-                    <h1 id="company_title">DotClassGames</h1>
-                </div>
-                <div class="col-6"></div>
-                <div class="col-4 menu_header">
-                    <a href="#">Home</a>
-                    <a href="#">Presentació</a>
-                    <a href="#" id="pagAct">Jocs</a>
-                    <a href="#">Notícies</a>
-                    <a href="#">Galería</a>
-                    <a href="#">FAQ's</a>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 logo_header">
+                <h1 id="company_title">DotClassGames</h1>
+            </div>
+            <div class="col-6 menu_header">
+                <a href="#">Home</a>
+                <a href="#">Presentació</a>
+                <a href="../html/jocs_general.html">Jocs</a>
+                <a href="#">Notícies</a>
+                <a href="#">Galería</a>
+                <a href="#">FAQ's</a>
             </div>
         </div>
-    </header>
+    </div>
 </header>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-2 h2">
-                <h2>WASD</h2>
+        <div class="row text_informatiu">
+            <div class="col-2"></div>
+            <div class="col-7 h2">
+                <h1>Atenció a l'usuari</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-7 formulari">
+                <h1>Report del problema</h1>
+                <form>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nomUsuari" name="nom" required>
+                    <label for="correu">Correu Electrònic</label>
+                    <input type="email" id="correuUsuari" name="correu" required>
+                    <label for="camp_incidencia">Camp en que s'ha trobat l'incidència</label>
+                    <select>
+                        <option disabled selected>--Camp de l'incidència--</option>
+                        <option>Dumstrang</option>
+                        <option>Gravity Long</option>
+                        <option>Altres</option>
+                    </select>
+                    <label for="data">Data en que s'ha trobat l'indicència</label>
+                    <input type="date" id="dataIncidencia">
+                    <label for="numIncidencies">Cuantes vegades has patit aquesta incidència</label>
+                    <label>
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="1"> 1 vegada
+                    </label>
+                    <label>
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="2"> 1 a 3 vegades
+                    </label>
+                    <label>
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="2"> Més de 5 vegades
+                    </label>
+                    <input type="button" value="Enviar Formulari">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-7 agraiment">
+                <h1>Antonio</h1>
+            </div>
+            <div class="col-3"></div>
         </div>
     </div>
 </body>
 <footer>
     <div class="container-fluid">
         <div class="row cont_footer">
-            <div class="col-2 logo">
+            <div class="col-6 logo">
                 <img id="logo" src="../../img/logo_dotclass_games.png">
             </div>
-            <div class="col-5"></div>
-            <div class="col-2 informacio_extra">
+            <div class="col-3 informacio_extra">
                 <h3>Informació Extra</h3>
                 <ul class="lista_info">
                     <li><a href="#">P.Contacte</a></li>

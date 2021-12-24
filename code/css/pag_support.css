@@ -11,8 +11,8 @@
     --color-fondo-menu: #252525;
     --img-targ-backg: #C4C1BF;
     --info-targ-backg: white;
-    --span-text: orange;
     --tamany-header: 8em;
+    --color-barra-apartat: #930c0c;
 }
 
 @font-face {
@@ -33,7 +33,8 @@ header {
 .logo_header {
     height: var(--tamany-header);
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 40px;
     align-items: center;
 }
 
@@ -41,22 +42,17 @@ header {
     font-size: 40px;
 }
 
-#pagAct {
-    color: var(--color-text-menu);
-    font-weight: bold;
-}
-
 .menu_header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: right;
     align-items: center;
 }
 
 .menu_header a {
     text-decoration: none;
     color: var(--header-text-color);
-    padding-left: 1em;
+    padding-right: 20px;
     font-size: 25px;
 }
 
@@ -64,17 +60,52 @@ header {
     color: var(--color-text-menu);
 }
 
-.h2 {
-    font-size: 20em;
+/*******
+* Body *
+*******/
+body {
+    background-color: var(--color-menu);
 }
 
+.h2 {
+    border: 1px solid red;
+    background-color: white;
+}
 
+.text_informatiu {
+    margin-top: 5em;
+    margin-bottom: 20px;
+}
+
+.formulari {
+    border: 1px solid red;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+input, label {
+    display: block;
+    margin-top: 10px;
+}
+
+.optionRadio {
+    display: inline-block;
+}
+
+.agraiment {
+    border: 1px solid red;
+    background-color: white;
+    margin-top: 10px;
+}
+
+/*********
+* Footer *
+*********/
 footer {
-    clear: both;
-    position: absolute;
     bottom: 0;
+    position: relative;
     height: 10em;
-    margin-top: -8em;
+    margin-top: 20em;
     width: 100%;
     background-color: var(--color-fondo-menu);
     color: white;
@@ -82,7 +113,6 @@ footer {
 
 .informacio_extra > * {
     display: block;
-    margin-top: 10px;
     padding: 0;
 }
 
@@ -100,6 +130,7 @@ footer {
 .lista_info > li > a {
     text-decoration: none;
     color: white;
+
 }
 
 .lista_info > li > a:hover {
@@ -110,11 +141,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -20px;
 }
 
 .logo {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 50px;
+    align-items: center;
 }
 
 #logo {

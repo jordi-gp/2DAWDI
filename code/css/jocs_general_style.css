@@ -151,8 +151,8 @@ body {
 * Footer *
 *********/
 footer {
-    position: absolute;
     bottom: 0;
+    position: fixed;
     height: 10em;
     margin-top: -8em;
     width: 100%;
@@ -162,7 +162,7 @@ footer {
 
 .informacio_extra > * {
     display: block;
-    
+    margin-top: 10px;
     padding: 0;
 }
 
@@ -180,7 +180,6 @@ footer {
 .lista_info > li > a {
     text-decoration: none;
     color: white;
-
 }
 
 .lista_info > li > a:hover {
@@ -197,6 +196,7 @@ footer {
 .logo {
     display: flex;
     justify-content: left;
+    padding-left: 50px;
     align-items: center;
 }
 
