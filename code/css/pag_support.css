@@ -13,6 +13,10 @@
     --info-targ-backg: white;
     --tamany-header: 8em;
     --color-barra-apartat: #930c0c;
+    --color-fondo-formulari: white;
+    --bg-color-button: #a39d9d;
+    --color-hover-button: #444343;
+    --sombreado: 10px 10px black;
 }
 
 @font-face {
@@ -68,8 +72,14 @@ body {
 }
 
 .h2 {
-    border: 1px solid red;
-    background-color: white;
+    background-color: var(--color-fondo-formulari);
+    border-radius: 20px;
+    box-shadow: var(--sombreado);
+}
+
+.h2 > p {
+    margin-top: 10px;
+    line-height: 25px;
 }
 
 .text_informatiu {
@@ -77,25 +87,57 @@ body {
     margin-bottom: 20px;
 }
 
-.formulari {
-    border: 1px solid red;
-    background-color: white;
+.formulari > * {
+    margin-left: 10px;
     margin-bottom: 10px;
 }
 
-input, label {
-    display: block;
+
+.formulari, .agraiment {
+    background-color: var(--color-fondo-formulari);
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: var(--sombreado);
+}
+
+input, label, select, textarea {
     margin-top: 10px;
+    display: block;
 }
 
 .optionRadio {
     display: inline-block;
 }
 
-.agraiment {
-    border: 1px solid red;
-    background-color: white;
+#botoEnviar {
+    display: flex;
+    height: 80px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+#enviar {
+    border-style: none;
+    text-decoration: none;
+    background-color: var(--bg-color-button);
+    border-radius: 0.5vh;
+    border: 1px solid black;
+}
+
+#enviar:hover {
+    cursor: pointer;
+    background-color: var(--color-hover-button);
+    color: white;
+}
+
+.agraiment > h1 {
+    font-size: 25px;
+}
+
+.agraiment > p {
     margin-top: 10px;
+    line-height: 25px;
 }
 
 /*********
@@ -105,7 +147,7 @@ footer {
     bottom: 0;
     position: relative;
     height: 10em;
-    margin-top: 20em;
+    margin-top: 5em;
     width: 100%;
     background-color: var(--color-fondo-menu);
     color: white;

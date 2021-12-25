@@ -70,7 +70,7 @@ header {
 *******/
 body {
     background-color: var(--color-menu);
-    height: 100vh;
+    height: 110vh;
 }
 
 .bloc_jocs {
@@ -82,6 +82,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     background-color: var(--color-barra-apartat);
 }
 
@@ -91,7 +92,8 @@ body {
     align-items: center;
     border: 2px solid black;
     border-radius: 1em;
-    margin-right: 1em;
+    margin-right: -5em;
+    margin-bottom: 20px;
     background-color: var(--img-targ-backg);
 }
 
@@ -99,6 +101,7 @@ body {
     border: 2px solid black;
     border-radius: 1em;
     margin-left: 1em;
+    margin-bottom: 20px;
     background-color: var(--info-targ-backg);
     flex-wrap: wrap;
 }
@@ -190,7 +193,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 
 .logo {
@@ -201,7 +204,7 @@ footer {
 }
 
 #logo {
-    height: 120px;
+    height: 100px;
 }
 
 #instagram {

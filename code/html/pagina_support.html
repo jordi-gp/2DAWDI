@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/template_grid.css" />
     <link rel="stylesheet" href="../css/pag_support.css" />
+    <script>
+        window.onload = main;
+
+        /*Script per a que l'usuari no puga seleccionar una data*
+        *superior a l'actual a l'hora d'emplenar el formulari*/
+        function main() {
+            var dataACt = new Date();
+
+            var any = dataACt.getFullYear();
+            var mes = dataACt.getMonth() + 1;
+            var dia = dataACt.getDate();
+
+            var data = document.getElementById("dataIncidencia");
+
+            data.setAttribute("max", any+"-"+mes+"-"+dia);
+        }
+    </script>
     <title>Pàgina de Suport</title>
 </head>
 <header>
@@ -28,18 +45,22 @@
 <body>
     <div class="container-fluid">
         <div class="row text_informatiu">
-            <div class="col-2"></div>
-            <div class="col-7 h2">
+            <div class="col-3"></div>
+            <div class="col-6 h2">
                 <h1>Atenció a l'usuari</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Desde DotClassGames ens agrada asegurar-nos que els productes i serveis que oferim als nostres clients
+                    siguen el millor possibles, però tampoc som perfectes, per el que en ocasions pot ocorrer que l'usuari
+                    final en algún moment trobe alguna incidència, en cas de ser així es troba disponible aquesta pàgina,
+                    que com el seu nom indica, serveix per reportar totes aquelles incidències, que es troben, per poder ser
+                    notificades i en un futur solucionades.
                 </p>
             </div>
             <div class="col-3"></div>
         </div>
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-7 formulari">
+            <div class="col-3"></div>
+            <div class="col-6 formulari">
                 <h1>Report del problema</h1>
                 <form>
                     <label for="nom">Nom</label>
@@ -54,25 +75,34 @@
                         <option>Altres</option>
                     </select>
                     <label for="data">Data en que s'ha trobat l'indicència</label>
-                    <input type="date" id="dataIncidencia">
+                    <input type="date" id="dataIncidencia" required>
+                    <label for="incidenciaTrobada">Incidència que s'ha trobat</label>
+                    <textarea rows="10" cols="60" placeholder="Incidència..."></textarea>
                     <label for="numIncidencies">Cuantes vegades has patit aquesta incidència</label>
                     <label>
-                        <input type="radio" class="optionRadio" name="numIncidencies" value="1"> 1 vegada
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="1" required> 1 vegada
                     </label>
                     <label>
-                        <input type="radio" class="optionRadio" name="numIncidencies" value="2"> 1 a 3 vegades
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="2" required> 1 a 3 vegades
                     </label>
                     <label>
-                        <input type="radio" class="optionRadio" name="numIncidencies" value="2"> Més de 5 vegades
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="2" required> Més de 5 vegades
                     </label>
-                    <input type="button" value="Enviar Formulari">
+                    <div id="botoEnviar">
+                        <input type="submit" id="enviar" value="Enviar Formulari">
+                    </div>
                 </form>
             </div>
         </div>
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-7 agraiment">
-                <h1>Antonio</h1>
+            <div class="col-3"></div>
+            <div class="col-6 agraiment">
+                <h1>Agraïments</h1>
+                <p>
+                    Gracies a les incidències reportades, tant els serveis com els productes milloren de cara al futur
+                    que es el que realment importa, per el que desde l'equip de DotCLassGames agraïm la comunicació entre
+                    l'usuari i l'empresa quan es tracta d'ajudar a millorar.
+                </p>
             </div>
             <div class="col-3"></div>
         </div>
