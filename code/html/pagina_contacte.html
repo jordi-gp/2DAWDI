@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina de Contace</title>
     <link rel="stylesheet" href="../css/template_grid.css" />
-    <link rel="stylesheet" href="../css/jocs_general_style.css" />
-    <title>Jocs (General)</title>
+    <link rel="stylesheet" href="../css/pagina_contacte_styles.css" />
 </head>
 <header>
     <div class="container-fluid">
@@ -17,7 +17,7 @@
             <div class="col-6 menu_header">
                 <a href="#">Home</a>
                 <a href="#">Presentació</a>
-                <a href="#" id="pagAct">Jocs</a>
+                <a href="../html/jocs_general.html">Jocs</a>
                 <a href="../html/noticies_general.html">Notícies</a>
                 <a href="#">Galería</a>
                 <a href="#">FAQ's</a>
@@ -28,46 +28,48 @@
 <body>
     <div class="row">
         <div class="col-12 titol-pag">
-            <h1>Videojocs</h1>
+            <h1>Pàgina de Contacte</h1>
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row bloc_jocs">
-            <div class="col-3"></div>
-            <div class="col-2 imatge_joc">
-                <img id="dumstrang" alt="dumstrang_logo" src="../../img/jocs/dumstrang_logo.png">
+        <div class="row">
+            <div class="col-12 imatge_contacte">
+                <img alt="imagen_contacto" src="../../img/banner/contact_img.jpg">
             </div>
-            <div class="col-1"></div>
-            <div class="col-3 info_joc">
-                <h1>Dumstrang</h1>
-                <p>
-                    Dumstrang és un videojoc d'acció i plataformes en 2D amb un estil inspirat
-                    en videojocs com <span class="joc_destacat">'Dark Souls'</span>, 
-                    <span class="joc_destacat">'Blasphemous'</span> i <span class="joc_destacat">'Castlevania'</span>.
-                </p>
-                <div class="button_mes_info">
-                    <button class="mes_info">Més Informació</button>
-                </div>
-            </div>
-            <div class="col-3"></div>
         </div>
-        <div class="row bloc_jocs">
-            <div class="col-3"></div>
-            <div class="col-2 imatge_joc">
-                <img id="gravity_logo" alt="dumstrang_logo" src="../../img/jocs/gravity_logo.png">
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4 info_1">
+                <h1 id="titulo">Información de contacto</h1>
+                <h3 class="info_extra">Telèfon de Contacte</h3>
+                <p class="info_extra">+34 633 28 65 77</p>
+                
+                <h3 class="info_extra">Horari de Contacte</h3>
+                <p class="info_extra">Dilluns-Divendres</p>
+
+                <h3 class="info_extra">Horari de Matí:</h3>
+                <p class="info_extra">09:00/12:00</p>
+
+                <h3 class="info_extra">Horari de Vesprada:</h3>
+                <p class="info_extra">16:00/20:00</p>
+            </div>
+            <div class="col-2" id="espai"></div>
+            <div class="col-4 info_2">
+                <h1>Formulari de Contacte</h1>
+                <form >
+                    <label for="nom_cognoms">Nom i Cognoms:</label>
+                    <input type="text" placeholder="Jordi García Pons" required>
+                    <label for="email">Correu Electrònic</label>
+                    <input type="email" placeholder="jordigarcia932@gmail.com" required>
+                    <textarea rows="10" cols="60" placeholder="Missatge a Enviar"></textarea>
+                    <div id="enviar">
+                        <input type="submit" id="boto_enviar" value="Enviar">
+                    </div>
+                </form>
             </div>
             <div class="col-1"></div>
-            <div class="col-3 info_joc">
-                <h1>Gravity Long</h1>
-                <p>
-                    Gravity Long és un videojoc de plataformeig en 2D amb un estil artístic
-                    de 8 bits en el qual la mecànica principal es el canvi de gravetat.
-                </p>
-                <div class="button_mes_info">
-                    <button class="mes_info">Més Informació</button>
-                </div>
-            </div>
-            <div class="col-3"></div>
         </div>
     </div>
 </body>
@@ -81,7 +83,7 @@
                 <h3>Informació Extra</h3>
                 <ul class="lista_info">
                     <li><a href="#">P.Contacte</a></li>
-                    <li><a href="../html/pagina_support.html">Suport</a></li>
+                    <li><a href="#">Suport</a></li>
                     <li><a href="#">P. Privacitat</a></li>
                 </ul>
             </div>

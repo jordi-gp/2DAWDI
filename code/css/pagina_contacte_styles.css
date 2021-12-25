@@ -1,0 +1,219 @@
+/*Configuración General del CSS*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-text-color: white;
+    --color-menu: rgb(64,64,64);
+    --color-text-menu: orange;
+    --color-fondo-menu: #252525;
+    --tamany-header: 8em;
+    --color-barra-apartat: #930c0c;
+    --bg-color-blocs-info: white;
+    --sombreado: 10px 10px black;
+    --bg-color-button: #a39d9d;
+    --color-hover-button: #444343;
+}
+
+@font-face {
+    font-family: "Press_2P";
+    src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
+}
+
+/*********
+* Header *
+*********/
+header {
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    height: var(--tamany-header);
+    color: var(--header-text-color)
+}
+
+.logo_header {
+    height: var(--tamany-header);
+    display: flex;
+    justify-content: left;
+    padding-left: 40px;
+    align-items: center;
+}
+
+#company_title {
+    font-size: 40px;
+}
+
+#pagAct {
+    color: var(--color-text-menu);
+    font-weight: bold;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.menu_header a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.menu_header a:hover {
+    color: var(--color-text-menu);
+}
+
+.titol-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-barra-apartat);
+}
+
+/*******
+* Body *
+*******/
+body {
+    background-color: var(--color-menu);
+    height: 180vh;
+}
+
+
+/*Imatge situada en el centre de la pàgina*/
+.imatge_contacte {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Separació entre els dos blocs*/
+#espai {
+    margin-right: -40px;
+    margin-left: -40px;
+}
+
+/*Apartat del formulari*/
+.info_1, .info_2 {
+    border-radius: 5px;
+    box-shadow: var(--sombreado);
+    background-color: var(--bg-color-blocs-info);
+}
+
+.info_1 > h1, .info_2 > h1 {
+    font-size: 30px;
+}
+
+#titulo {
+    margin-bottom: 10px;
+}
+
+.info_extra {
+    line-height: 35px;
+}
+
+input {
+    width: 15em;
+}
+
+input, label, textarea {
+    display: block;
+    margin-top: 10px;
+}
+
+#enviar {
+    display: flex;
+    justify-content: center;
+}
+
+#boto_enviar {
+    margin-top: 30px;
+    height: 2.5em;
+    width: 5em;
+    border-style: none;
+    text-decoration: none;
+    background-color: var(--bg-color-button);
+    border-radius: 0.5vh;
+    border: 1px solid black;
+}
+
+#boto_enviar:hover {
+    cursor: pointer;
+    background-color: var(--color-hover-button);
+    color: white;
+}
+
+/*********
+* Footer *
+*********/
+footer {
+    bottom: 0;
+    position: fixed;
+    height: 10em;
+    margin-top: -8em;
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    color: white;
+}
+
+.informacio_extra > * {
+    display: block;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.informacio_extra h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.lista_info > li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista_info > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista_info > li > a:hover {
+    color: var(--color-text-menu);
+}
+
+.rss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    align-items: center;
+}
+
+#logo {
+    height: 100px;
+}
+
+#instagram {
+    width: 100px;
+}
+
+#twitter {
+    width: 70px;
+}
+
+#itch-io {
+    width: 80px;
+}
