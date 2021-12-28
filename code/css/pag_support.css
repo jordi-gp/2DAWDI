@@ -131,6 +131,10 @@ input, label, select, textarea {
     color: white;
 }
 
+.agraiment {
+    margin-top: 40px;
+}
+
 .agraiment > h1 {
     font-size: 25px;
 }

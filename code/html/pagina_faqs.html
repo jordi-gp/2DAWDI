@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pàgina de Contace</title>
     <link rel="stylesheet" href="../css/template_grid.css" />
-    <link rel="stylesheet" href="../css/pagina_contacte_styles.css" />
+    <link rel="stylesheet" href="../css/pag_faqs_styles.css" />
+    <title>FAQ'S</title>
 </head>
 <header>
     <div class="container-fluid">
@@ -28,48 +28,45 @@
 <body>
     <div class="row">
         <div class="col-12 titol-pag">
-            <h1>Pàgina de Contacte</h1>
+            <h1>FAQ'S</h1>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 imatge_contacte">
-                <img alt="imagen_contacto" src="../../img/banner/contact_img.jpg">
+            <div class="col-12 imatge_banner">
+                <img alt="imagen_contacto" src="../../img/banner/faqs_new_img.jpg">
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-4 info_1">
-                <h1 id="titulo">Información de contacto</h1>
-                <h3 class="info_extra">Telèfon de Contacte</h3>
-                <p class="info_extra">+34 633 28 65 77</p>
-                
-                <h3 class="info_extra">Horari de Contacte</h3>
-                <p class="info_extra">Dilluns-Divendres</p>
-
-                <h3 class="info_extra">Horari de Matí:</h3>
-                <p class="info_extra">09:00/12:00</p>
-
-                <h3 class="info_extra">Horari de Vesprada:</h3>
-                <p class="info_extra">16:00/20:00</p>
+            <div class="col-3"></div>
+            <div class="col-6 info">
+                <h1>Preguntes més freqüents</h1>
+                <p id="text_desc">
+                    Donat el cas de que en algún moment es tinga algún dubte/problema,
+                    es tan simple com acudir a la plana de suport i enviar una incidència
+                    per rebre una resposta lo mes prompte possible, pero donat el cas de que
+                    puga ser un dubte més general, en aquesta plana es troben les respostes
+                    a algunes de les preguntes més generals que l'usuari pot tindre.
+                </p>
+                <h2><span class="pregunta">P.</span><span class="content_pregunta">Quants jocs hi ha disponibles actualment?</span></h2>
+                <div class="content_resposta">
+                    <h2 class="resposta">R.</h2>
+                    <p>Per el moment es troben disponibles 2 jocs, 'Gravity Long' i 'Dumstrang'</p>
+                </div>
+                <h2><span class="pregunta">P.</span><span class="content_pregunta">Són els jocs gratuïts?</span></h2>
+                <div class="content_resposta">
+                    <h2 class="resposta">R.</h2>
+                    <p>Actualment tots els jocs que hi ha disponibles son totalment gratuïts.</p>
+                </div>
+                <h2><span class="pregunta">P.</span><span class="content_pregunta">On puc descarregar els jocs?</span></h2>
+                <div class="content_resposta">
+                    <h2 class="resposta">R.</h2>
+                    <p>Desde la pàgina de cada joc es troba l'enllaç per poder accedir a la descàrrega.</p>
+                </div>
             </div>
-            <div class="col-2" id="espai"></div>
-            <div class="col-4 info_2">
-                <h1>Formulari de Contacte</h1>
-                <form >
-                    <label for="nom_cognoms">Nom i Cognoms:</label>
-                    <input type="text" placeholder="Jordi García Pons" required>
-                    <label for="email">Correu Electrònic</label>
-                    <input type="email" placeholder="jordigarcia932@gmail.com" required>
-                    <textarea rows="10" cols="60" placeholder="Missatge a Enviar"></textarea>
-                    <div id="enviar">
-                        <input type="submit" id="boto_enviar" value="Enviar">
-                    </div>
-                </form>
-            </div>
-            <div class="col-1"></div>
+            <div class="col-3"></div>
         </div>
     </div>
 </body>
@@ -82,8 +79,8 @@
             <div class="col-3 informacio_extra">
                 <h3>Informació Extra</h3>
                 <ul class="lista_info">
-                    <li><a href="#!">P.Contacte</a></li>
-                    <li><a href="../html/pagina_support.html">Suport</a></li>
+                    <li><a href="../html/pagina_contacte.html">P.Contacte</a></li>
+                    <li><a href="#!">Suport</a></li>
                     <li><a href="#">P. Privacitat</a></li>
                 </ul>
             </div>

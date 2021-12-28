@@ -72,7 +72,7 @@ header {
 *******/
 body {
     background-color: var(--color-menu);
-    height: 150vh;
+    height: 100vh;
 }
 
 .bloc_noticies {
@@ -155,9 +155,8 @@ body {
 *********/
 footer {
     bottom: 0;
-    position: fixed;
     height: 10em;
-    margin-top: -8em;
+    margin-top: 8em;
     width: 100%;
     background-color: var(--color-fondo-menu);
     color: white;

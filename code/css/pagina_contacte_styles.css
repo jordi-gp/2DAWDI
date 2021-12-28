@@ -80,9 +80,8 @@ header {
 *******/
 body {
     background-color: var(--color-menu);
-    height: 180vh;
+    height: 100vh;
 }
-
 
 /*Imatge situada en el centre de la pàgina*/
 .imatge_contacte {
@@ -154,9 +153,8 @@ input, label, textarea {
 *********/
 footer {
     bottom: 0;
-    position: fixed;
     height: 10em;
-    margin-top: -8em;
+    margin-top: 8em;
     width: 100%;
     background-color: var(--color-fondo-menu);
     color: white;
