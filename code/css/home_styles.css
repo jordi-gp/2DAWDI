@@ -6,8 +6,6 @@
 
 :root{
     /*Colors*/
-    --info-targ-backg: white;
-    --img-targ-backg: #C4C1BF;
     --color-text-menu: orange;
     --header-text-color: white;
     --color-bg-button: #9f9e9c;
@@ -18,13 +16,7 @@
 
     /*Mesures*/
     --tamany-header: 8em;
-    --tamany-img-joc: 15em;
     --marge-botons-carrusel: -22em;
-}
-
-@font-face {
-    font-family: "Press_2P";
-    src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
 }
 
 /*********

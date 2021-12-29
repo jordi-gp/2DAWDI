@@ -113,7 +113,7 @@ body {
 }
 
 .reproductor > img{
-    width: 3em;
+    width: 4em;
     margin-top: 30px;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -213,6 +213,10 @@ body {
     border-radius: 5px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+input {
+    width: 200px;
 }
 
 input, label, select, textarea {

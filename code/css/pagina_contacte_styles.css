@@ -5,21 +5,19 @@
 }
 
 :root{
-    --header-text-color: white;
-    --color-menu: rgb(64,64,64);
+    /*Colors*/
     --color-text-menu: orange;
+    --header-text-color: white;
+    --bg-color-button: #a39d9d;
+    --color-menu: rgb(64,64,64);
     --color-fondo-menu: #252525;
-    --tamany-header: 8em;
-    --color-barra-apartat: #930c0c;
     --bg-color-blocs-info: white;
     --sombreado: 10px 10px black;
-    --bg-color-button: #a39d9d;
     --color-hover-button: #444343;
-}
+    --color-barra-apartat: #930c0c;
 
-@font-face {
-    font-family: "Press_2P";
-    src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
+    /*Mesures*/
+    --tamany-header: 8em;
 }
 
 /*********

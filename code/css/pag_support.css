@@ -5,23 +5,21 @@
 }
 
 :root{
-    --header-text-color: white;
-    --color-menu: rgb(64,64,64);
-    --color-text-menu: orange;
-    --color-fondo-menu: #252525;
-    --img-targ-backg: #C4C1BF;
+    /*Colors*/
     --info-targ-backg: white;
-    --tamany-header: 8em;
+    --color-text-menu: orange;
+    --img-targ-backg: #C4C1BF;
+    --bg-color-button: #a39d9d;    
+    --header-text-color: white;
+    --color-fondo-menu: #252525;
+    --color-menu: rgb(64,64,64);
+    --sombreado: 10px 10px black;
+    --color-hover-button: #444343;
     --color-barra-apartat: #930c0c;
     --color-fondo-formulari: white;
-    --bg-color-button: #a39d9d;
-    --color-hover-button: #444343;
-    --sombreado: 10px 10px black;
-}
 
-@font-face {
-    font-family: "Press_2P";
-    src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
+    /*Mesures*/
+    --tamany-header: 8em;    
 }
 
 /*********

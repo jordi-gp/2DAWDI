@@ -20,11 +20,11 @@
             //Funció per controlar l'audio de la pàgina
             function control_audio() {
                 if(reprod.id == "pause") {
-                    reprod.setAttribute("src", "../../img/controles_audio/play_button.jpg");
+                    reprod.setAttribute("src", "../../img/controles_audio/boto_pause.jpg");
                     audio.pause();
                     reprod.setAttribute("id", "play");
                 } else {
-                    reprod.setAttribute("src", "../../img/controles_audio/pause_button.jpg");
+                    reprod.setAttribute("src", "../../img/controles_audio/boto_play.jpg");
                     audio.play();
                     reprod.setAttribute("id", "pause");
                 }
@@ -60,9 +60,9 @@
         <div class="row">
             <div class="col-12 reproductor">
                 <audio id="audio_pag" autoplay loop>
-                    <source src="../../audio/gravity_audio.mp3" type="audio/mpeg"  />
+                    <source src="../../audio/dumstrang_audio.mp3" type="audio/mpeg"  />
                 </audio>
-                <img alt="play_button" id="pause" src="../../img/controles_audio/pause_button.jpg">
+                <img alt="play_button" id="pause" src="../../img/controles_audio/boto_play.jpg">
             </div>
         </div>
     </div>

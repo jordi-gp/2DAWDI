@@ -5,15 +5,18 @@
 }
 
 :root{
+    /*Colors*/
+    --info-targ-backg: white;
+    --color-text-menu: orange;
+    --img-targ-backg: #C4C1BF;
     --header-text-color: white;
     --color-menu: rgb(64,64,64);
-    --color-text-menu: orange;
     --color-fondo-menu: #252525;
-    --img-targ-backg: #C4C1BF;
-    --info-targ-backg: white;
+    --color-barra-apartat: #930c0c;
+
+    /*Mesures*/
     --tamany-header: 8em;
     --tamany-img-joc: 15em;
-    --color-barra-apartat: #930c0c;
 }
 
 @font-face {
