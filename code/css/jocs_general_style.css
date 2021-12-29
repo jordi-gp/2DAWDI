@@ -12,6 +12,7 @@
     --img-targ-backg: #C4C1BF;
     --info-targ-backg: white;
     --tamany-header: 8em;
+    --tamany-img-joc: 15em;
     --color-barra-apartat: #930c0c;
 }
 
@@ -142,12 +143,8 @@ body {
     color: white;
 }
 
-#dumstrang {
-    width: 15em;
-}
-
-#gravity_long {
-    width: 12em;
+#dumstrang, #gravity_logo {
+    width: var(--tamany-img-joc);
 }
 
 /*********
@@ -156,7 +153,7 @@ body {
 footer {
     bottom: 0;
     height: 10em;
-    margin-top: 8em;
+    margin-top: 13em;
     width: 100%;
     background-color: var(--color-fondo-menu);
     color: white;

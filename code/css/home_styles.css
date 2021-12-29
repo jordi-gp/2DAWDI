@@ -5,148 +5,277 @@
 }
 
 :root{
+    /*Colors*/
+    --info-targ-backg: white;
+    --img-targ-backg: #C4C1BF;
+    --color-text-menu: orange;
     --header-text-color: white;
+    --color-bg-button: #9f9e9c;
+    --color-menu: rgb(64,64,64);
+    --color-fondo-menu: #252525;
+    --color-barra-apartat: #F59F1A;
+    --color-bloc-not-dest:  #FF5733;
+
+    /*Mesures*/
+    --tamany-header: 8em;
+    --tamany-img-joc: 15em;
+    --marge-botons-carrusel: -22em;
+}
+
+@font-face {
+    font-family: "Press_2P";
+    src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
 }
 
 /*********
 * Header *
 *********/
-.header_home {
-    background-color: rgb(64,64,64);
-    display: flex;
-    color: var(--header-text-color);
+header {
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    height: var(--tamany-header);
+    color: var(--header-text-color)
 }
 
-/*Col-4 parte izquierda*/
 .logo_header {
-    border: 1px solid white;
+    height: var(--tamany-header);
     display: flex;
-    flex-direction: row;
+    justify-content: left;
+    padding-left: 40px;
+    align-items: center;
 }
 
 #company_title {
-    font-size: 25px;
-    margin-left: 1em;
+    font-size: 40px;
 }
 
-/*Col-8 parte derecha*/
+#pagAct {
+    color: var(--color-text-menu);
+    font-weight: bold;
+}
+
 .menu_header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
 }
 
 .menu_header a {
     text-decoration: none;
     color: var(--header-text-color);
+    padding-right: 20px;
+    font-size: 25px;
 }
 
 .menu_header a:hover {
-    color: orange;
+    color: var(--color-text-menu);
 }
 
 /*******
 * Body *
 *******/
-
-/*Carrusel de imagenes*/
-.slider {
-    border: 1px solid black;
-    display: flex;
-    height: 25em;
-    justify-content: center;
+body {
+    background-color: var(--color-menu);
+    height: 100vh;
 }
 
-.slider_block {
-    border: 1px solid red;
-    background-color: lightskyblue;
+.titol-pag {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: var(--color-barra-apartat);
+}
+
+/*Estils aplicats al carrusel*/
+.carrusel {
+    margin-top: 2em;
+    margin-left: 25%;
+    margin-right: 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-#boto_carrusel_esquerre{
+.carrusel > img {
+    width: 75vh;
 }
 
-#boto_carrusel_dret {
+.seguent {
+    margin-right: var(--marge-botons-carrusel);
 }
 
-#text_carrusel {
+.anterior {
+    margin-left: var(--marge-botons-carrusel);
 }
 
+.anterior, .seguent {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 16px;
+    position: absolute;
+}
 
-/*Events con el ratón*/
-#lt:hover, #gt:hover {
-    color: red;
+.anterior:hover, .seguent:hover {
     cursor: pointer;
+    color: black;
+    background-color: white;
 }
 
-.boto_carrusel{
+.buttons {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 20px 2px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.dot:hover {
+    background-color: black;
+}
+
+/*Notícies destacades*/
+.titol_apartat {
+    border-radius: 5px;
+    background-color: var(--color-bloc-not-dest);
+    margin-top: 40px;
+}
+
+.titol_apartat > h1 {
     color: white;
+    font-size: 25px;
+    text-align: center;
 }
 
-/*Camp de les notícies*/
+/*Contenedor con notícias destacadas*/
+.b {
+    margin-top: 50px;
+}
 
-/*Camp general que abarca el títol i les notícies concretes*/
-.bloc_noticies {
-    border: 1px solid black;
-    height: 40em;
+.b {
     display: flex;
+    justify-content: space-around;
+}
+
+.not_dest {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
     flex-direction: column;
+    border: 2px solid grey;
+    background-color: white;
+    box-shadow: 10px 10px black;
 }
 
-/*Títol del camp general*/
-.apartat_noticies {
-    border: 1px solid black;
-    display: flex;
-    justify-content: flex-start;
-    background-color: yellowgreen;
+.not_dest > * {
+    margin-top: 10px;
 }
 
-/*Bloc on es troben les notícies concretes, cada una d'elles*/
-.noticies {
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-bottom: 1em;
-    flex-wrap: wrap;
+.not_dest > img {
+    width: 250px;
 }
 
-.noticia_concreta {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
+.not_dest > h3 {
+    margin-left: 10px;
 }
 
-.imatge_noticia {
-    background-color: aquamarine;
-    padding-right: 10em;
-    padding-bottom: 3em;
+.not_dest > p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.not_dest > p, .not_dest > button {
+    margin-bottom: 20px;
+}
+
+.not_dest > button {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--color-bg-button);
+    border-radius: 5px;
+    color: black;
+    border: none;
+}
+
+.not_dest > button:hover {
+    background-color: black;
+    color: white;
 }
 
 /*********
 * Footer *
 *********/
-.footer_pag {
-    border: 1px solid red;
-    height: 5em;
-    display: flex;
-    justify-content: space-between;
+footer {
+    bottom: 0;
+    height: 10em;
+    margin-top: 13em;
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    color: white;
 }
 
-.info_cont {
+.informacio_extra > * {
+    display: block;
+    margin-top: 10px;
+    padding: 0;
 }
 
-.redes_sociales {
+.informacio_extra h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.lista_info > li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista_info > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista_info > li > a:hover {
+    color: var(--color-text-menu);
+}
+
+.rss {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
     align-items: center;
 }
 
-.redes_sociales img {
-    width: 90px;
+#logo {
+    height: 100px;
 }
 
-.redes_sociales img:hover{
-    filter: brightness(1.5);
+#instagram {
+    width: 100px;
+}
+
+#twitter {
+    width: 70px;
+}
+
+#itch-io {
+    width: 80px;
 }

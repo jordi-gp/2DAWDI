@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/template_grid.css" />
+    <link rel="stylesheet" href="../css/joc_concret.css" />
+    <script>
+        window.onload = main;
+
+        function main(){
+            //Elements del HTML
+            var reprod = document.getElementById("pause");
+            var audio = document.getElementById("audio_pag");
+
+            //Afegiment del event als controls d'udio
+            reprod.addEventListener("click", control_audio);
+            
+            //Funció per controlar l'audio de la pàgina
+            function control_audio() {
+                if(reprod.id == "pause") {
+                    reprod.setAttribute("src", "../../img/controles_audio/play_button.jpg");
+                    audio.pause();
+                    reprod.setAttribute("id", "play");
+                } else {
+                    reprod.setAttribute("src", "../../img/controles_audio/pause_button.jpg");
+                    audio.play();
+                    reprod.setAttribute("id", "pause");
+                }
+            }
+        }
+    </script>
+    <title>Dumstrang</title>
+</head>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 logo_header">
+                <h1 id="company_title">DotClassGames</h1>
+            </div>
+            <div class="col-6 menu_header">
+                <a href="#">Home</a>
+                <a href="#">Presentació</a>
+                <a href="#" id="pagAct">Jocs</a>
+                <a href="../html/noticies_general.html">Notícies</a>
+                <a href="#">Galería</a>
+                <a href="../html/pagina_faqs.html">FAQ's</a>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container-fluid bloc_1">
+        <div class="row">
+            <div class="col-12 main_logo">
+                <img alt="dumstrang_logo" src="../../img/jocs/dumstrang_logo.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 reproductor">
+                <audio id="audio_pag" autoplay loop>
+                    <source src="../../audio/gravity_audio.mp3" type="audio/mpeg"  />
+                </audio>
+                <img alt="play_button" id="pause" src="../../img/controles_audio/pause_button.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bloc_2">
+        <div class="row">
+            <div class="col-12 titol-apartat">
+                <h1>Descripció</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4 descripcio">
+                <h1>Descripció</h1>
+                <p>
+                    Dumstrang es un videojoc de plataformeig en 2D el qual
+                    agafa com inspiració alguns títuls tals com 'Dark Souls',
+                    'Blasphemous'.
+                </p>
+                <p>
+                    En aquesta aventura el jugador pot triar entre 3 classes
+                    diferents de personatges, un guerrer, una maga o un asassí,
+                    l'objectiu del joc es avançar per els diferents nivells que
+                    hi han, que es 1 actualment, encara que cal destacar que prompte
+                    es trobrarà disponible una nova versió la qual inclou un parell
+                    de nivells més.
+                </p>
+                <p>
+                    El joc es troba totalment gratuit a la pàgina de 'Itch-io' a la
+                    qual es pot accedir fent click sobre el botó que es troba avall
+                    per poder descarregar-lo, actualment el joc
+                    sols es troba disponible per a ordinadors.
+                </p>
+                <div id="descarregar">
+                    <a href="https://dotclassgames.itch.io/dumstrang-game">Descarregar</a>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5 video">
+                <iframe width="550" height="400" src="https://www.youtube.com/embed/jG3mL6h7WCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="container-fluid galeria">
+        <div class="row">
+            <div class="col-12 titol-apartat">
+                <h1>Galería</h1>
+            </div>
+        </div>
+        <div class="row content-galeria">
+            <div class="col-2"></div>
+            <div class="col-8 img_galeria">
+                <div class="imatge">
+                    <img alt="menu_joc" src="../../img/capturas_juegos/dumstrang/menu.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="seleccion_personatges" src="../../img/capturas_juegos/dumstrang/seleccio_personatges.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="ataque_maga" src="../../img/capturas_juegos/dumstrang/ataque_maga.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="foto_polado" src="../../img/capturas_juegos/dumstrang/foto_poblado.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="batalla_poblado" src="../../img/capturas_juegos/dumstrang/batalla_boss_poblado.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="nivel_castillo" src="../../img/capturas_juegos/dumstrang/castillo.jpg">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 titol-apartat">
+                <h1>Deixa'ns un comentari</h1>
+            </div>
+        </div>
+        <div class="row formulari">
+            <div class="col-3"></div>
+            <div class="col-6 content_form">
+                <form >
+                    <label for="nom_cognoms">Nom i Cognoms:</label>
+                    <input type="text" placeholder="Jordi García Pons" required>
+                    <label for="email">Correu Electrònic</label>
+                    <input type="email" placeholder="jordigarcia932@gmail.com" required>
+                    <textarea rows="10" cols="60" placeholder="Missatge a Enviar"></textarea>
+                    <div id="enviar">
+                        <input type="submit" id="boto_enviar" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container-fluid">
+        <div class="row cont_footer">
+            <div class="col-6 logo">
+                <img id="logo" src="../../img/logos/logo_dotclass_games.png">
+            </div>
+            <div class="col-3 informacio_extra">
+                <h3>Informació Extra</h3>
+                <ul class="lista_info">
+                    <li><a href="../html/pagina_contacte.html">P.Contacte</a></li>
+                    <li><a href="../html/pagina_support.html">Suport</a></li>
+                    <li><a href="#">P. Privacitat</a></li>
+                </ul>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://www.instagram.com/dotclassgames/"><img alt="instagram" id="instagram" src="../../img/logos/instagram_logo.png"></a>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://twitter.com/dotclassgames"><img alt="twitter" class="rss" id="twitter" src="../../img/logos/twitter_logo.png"></a>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://dotclassgames.itch.io/"><img alt="itch-io" class="rss" id="itch-io" src="../../img/logos/itch-io_logo.png"></a>
+            </div>
+        </div>            
+    </div>
+</footer>
+</html>

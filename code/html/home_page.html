@@ -8,118 +8,104 @@
     <link rel="stylesheet" href="../css/home_styles.css" />
     <title>Pàgina Home</title>
 </head>
-<header class="container-fluid">
-    <div class="row">
-        <div class="col-4 logo_header">
-            <img id="logo" alt="logo_dotclass" >
-            <h1 id="company_title">DotClassGames</h1>
-        </div>
-        <div class="col-8 menu_header">
-            <a href="#">Home</a>
-            <a href="#">Presentació</a>
-            <a href="#">Videojocs</a>
-            <a href="#">Notícies</a>
-            <a href="#">Galería</a>
-            <a href="#">P.Contacte</a>
-            <a href="#">FAQ's</a>
-            <a href="#">Suport</a>
-            <a href="#">P. Privacitat</a>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 logo_header">
+                <h1 id="company_title">DotClassGames</h1>
+            </div>
+            <div class="col-6 menu_header">
+                <a href="#">Home</a>
+                <a href="#">Presentació</a>
+                <a href="#" id="pagAct">Jocs</a>
+                <a href="../html/noticies_general.html">Notícies</a>
+                <a href="#">Galería</a>
+                <a href="../html/pagina_faqs.html">FAQ's</a>
+            </div>
         </div>
     </div>
 </header>
 <body>
     <div class="row">
-        <div class="col-8 slider_block">
-            <div id="boto_carrusel_esquerre">
-                <p id="lt">&lt;</p>
-            </div>
-            <div id="text_carrusel">
-                <p id="carrusel">Carrusel de imagenes</p>
-            </div>
-            <div id="boto_carrusel_dret">
-                <p id="gt">&gt;</p>
-            </div>
-            <div>
-                <span class="boto_carrusel"></span>
-                <span class="boto_carrusel"></span>
-                <span class="boto_carrusel"></span>
-            </div>
+        <div class="col-12 titol-pag">
+            <h1>Home</h1>
         </div>
     </div>
-    <div class="row">
-            <div class="col-3 apartat_noticies">
-                <h1>Notícies</h1>
-            </div>
-            <div class="col-10 noticies">
-                <div class="noticia_concreta">
-                    <div class="imatge_noticia">
-                        <img alt="Noticia_1">
-                    </div>
-                    <div class="cos_noticia">
-                        <h1 class="titol_noticia">Títol de la Notícia</h1>
-                        <p>Lorem ipsum lorem ipsum</p>
-                    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 carrusel">
+                <div class="carrusel">
+                <a class="anterior">&#10094;</a>
+                <div>
+                    <img alt="noticia_1" src="../../img/noticies/gravity_long_android.jpg">
                 </div>
-                <div class="noticia_concreta">
-                    <div class="imatge_noticia">
-                        <img alt="Noticia_2">
-                    </div>
-                    <div class="cos_noticia">
-                        <h1 class="titol_noticia">Títol de la notícia</h1>
-                        <p>Lorem ipsum lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="noticia_concreta">
-                    <div class="imatge_noticia">
-                        <img alt="Noticia_2">
-                    </div>
-                    <div class="cos_noticia">
-                        <h1 class="titol_noticia">Títol de la notícia</h1>
-                        <p>Lorem ipsum lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="noticia_concreta">
-                    <div class="imatge_noticia">
-                        <img alt="Noticia_2">
-                    </div>
-                    <div class="cos_noticia">
-                        <h1 class="titol_noticia">Títol de la notícia</h1>
-                        <p>Lorem ipsum lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="noticia_concreta">
-                    <div class="imatge_noticia">
-                        <img alt="Noticia_2">
-                    </div>
-                    <div class="cos_noticia">
-                        <h1 class="titol_noticia">Títol de la notícia</h1>
-                        <p>Lorem ipsum lorem ipsum</p>
-                    </div>
-                </div>
-                <div class="noticia_concreta">
-                    <div class="imatge_noticia">
-                        <img alt="Noticia_2">
-                    </div>
-                    <div class="cos_noticia">
-                        <h1 class="titol_noticia">Títol de la notícia</h1>
-                        <p>Lorem ipsum lorem ipsum</p>
-                    </div>
+                <a class="seguent">&#10095;</a>
+                <div class="buttons">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-2 titol_apartat">
+                <h1>Notícies destacades</h1>
+            </div>
+            <div class="col-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 b">
+                <div class="not_dest">
+                    <img src="../../img/noticies/dumstrang_version.jpg">
+                    <h3>Nova versió de Dumstrang</h3>
+                    <p>Pròxiament nova versió de Dumstrang amb més contingut.</p>
+                    <button class="mes_info">Més Informació</button>
+                </div>
+                <div class="not_dest">
+                    <img src="../../img/noticies/gravity_long_switch_not.jpg">
+                    <h3>Gravity Long en Nintendo Switch</h3>
+                    <p>Pròximament Gravity Long estarà disponible en Nintendo Switch</p>
+                    <button class="mes_info">Més Informació</button>
+                </div>
+                <div class="not_dest">
+                    <img src="../../img/noticies/gravity_long_android.jpg">
+                    <h3>Gravity Long en Android</h3>
+                    <p>Ja es troba disponible Gravity Long per a dispositius Android</p>
+                    <button class="mes_info">Més Informació</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <footer>
-    <div class="row">
-            <div class="col-4 info_cont">
-                <a href="#">Contacte</a>
-                <a href="#">Suport</a>
-                <a href="#">P. Privacitat</a>
+    <div class="container-fluid">
+        <div class="row cont_footer">
+            <div class="col-6 logo">
+                <img id="logo" src="../../img/logos/logo_dotclass_games.png">
             </div>
-            <div class="col-3 redes_sociales">
-                <a href="#"><img alt="instagram" src="../../img/logos/instagram_logo.png"></a>
-                <a href="#"><img alt="twitter" src="../../img/logos/twitter_logo.png"></a>
-                <a href="#"><img alt="itch-io" src="../../img/logos/itch-io_logo.png"></a>
+            <div class="col-3 informacio_extra">
+                <h3>Informació Extra</h3>
+                <ul class="lista_info">
+                    <li><a href="../html/pagina_contacte.html">P.Contacte</a></li>
+                    <li><a href="../html/pagina_support.html">Suport</a></li>
+                    <li><a href="#">P. Privacitat</a></li>
+                </ul>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://www.instagram.com/dotclassgames/"><img alt="instagram" id="instagram" src="../../img/logos/instagram_logo.png"></a>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://twitter.com/dotclassgames"><img alt="twitter" class="rss" id="twitter" src="../../img/logos/twitter_logo.png"></a>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://dotclassgames.itch.io/"><img alt="itch-io" class="rss" id="itch-io" src="../../img/logos/itch-io_logo.png"></a>
             </div>
         </div>
+    </div>
 </footer>
 </html>
