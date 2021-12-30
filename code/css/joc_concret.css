@@ -20,7 +20,6 @@
     --tamany-header: 8em;
 }
 
-/*Font utilizada*/
 @font-face {
     font-family: "Press_2P";
     src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
@@ -75,7 +74,7 @@ header {
 * Body *
 *******/
 body {
-    background-color: var(--color-menu);
+    background-color: var(--color-cuart-bloc);
     height: 100vh;
 }
 
@@ -84,15 +83,7 @@ body {
     background-color: var(--color-primer-bloc);
 }
 
-/*Capçalera indicativa de la pàgina en concret*/
-.titol-pag {
-    font-family: "Press_2P";
-    text-align: center;
-    background-color: var(--color-barra-apartat);
-    color: white;
-}
-
-/*Logo principal del videojoc*/
+/*Logo principal del videojoc Dumnstrang*/
 .main_logo {
     display: flex;
     align-items: center;
@@ -103,6 +94,26 @@ body {
     margin-top: 30px;
     width: 40em;
     height: 25em;
+}
+
+/*Logo principal del videojoc Gravity Long*/
+.gravity_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gravity_logo > img {
+    margin-top: 30px;
+    width: 20em;
+    height: 15em;
+}
+
+.gravity_logo > h1 {
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: "Press_2P";
 }
 
 /*Reproductor de música de la pàgina*/
@@ -128,6 +139,10 @@ body {
     background-color: var(--color-segon-bloc);
     padding-bottom: 5em;
     display: block;
+}
+
+span {
+    font-weight: bold;
 }
 
 .video {
@@ -200,6 +215,12 @@ body {
 .imatge > img {
     border: 3px solid black;
     width: 35em;
+    transition: transform .2s;
+}
+
+.imatge > img:hover {
+    cursor: pointer;
+    transform: scale(1.25);
 }
 
 /*Cuart bloc de la pàgina*/
@@ -222,6 +243,23 @@ input {
 input, label, select, textarea {
     margin-top: 10px;
     display: block;
+}
+
+.torna_dalt {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--color-cuart-bloc);
+}
+
+.torna_dalt > a > img {
+    margin-right: 50px;
+    width: 50px;
+}
+
+.torna_dalt > a > img:hover {
+    cursor: pointer;
 }
 
 /*********

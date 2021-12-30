@@ -1,0 +1,146 @@
+/*Configuración General del CSS*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Colors*/
+    --color-th: #1fb9f3;
+    --color-titol-pag: #55aff6;
+    --color-pag-actual: #42dd08;
+    --color-barra-menu: #5c5d5d;
+    --color-fondo-body: #c1cabe;
+    --color-fondo-blocs: lightblue;
+}
+
+
+/*Apartat del header*/
+.menu {
+    background-color: var(--color-barra-menu);
+}
+
+.logo_header > img {
+    margin-left: 20px;
+    width: 7.5em;
+}
+
+.menu_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu_header > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.menu_header > a:hover {
+    color: black !important;
+}
+
+#pagAct {
+    font-weight: bold;
+    color: var(--color-pag-actual);
+}
+
+/*Contingut de la pàgina*/
+/*Apartat indicatiu del camp*/
+body {
+    background-color: var(--color-fondo-body);
+}
+
+.taula {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 40px;
+    border: 1px solid black;
+    justify-content: center;
+    background-color: var(--color-fondo-blocs);
+}
+
+.titol_camp {
+    background-color: var(--color-titol-pag);
+}
+
+.titol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Taula que conté el contingut de les notícies*/
+table {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+td > a {
+    text-decoration: none;
+    color: black;
+}
+
+td > a:hover {
+    color: blue;
+}
+
+th {
+    background-color: var(--color-th);
+}
+
+.data {
+    text-align: center;
+}
+
+/*Camp per afegir una nova notícia*/
+.form_afegiment {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-fondo-blocs);
+    border: 1px solid black;
+    margin-bottom: 5em;
+}
+
+form {
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.form_afegiment > * {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+label, input, textarea, select {
+    display: block;
+    margin: 20px;
+}
+
+#enviar_noticia {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+#enviar_noticia:hover {
+    border-radius: 5px;
+    color: white;
+    background-color: gray;
+    border: 1px solid black;
+}

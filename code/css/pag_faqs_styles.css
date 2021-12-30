@@ -41,6 +41,11 @@ header {
     font-size: 40px;
 }
 
+#pagAct {
+    color: var(--color-text-menu);
+    font-weight: bold;
+}
+
 .menu_header {
     display: flex;
     flex-direction: row;

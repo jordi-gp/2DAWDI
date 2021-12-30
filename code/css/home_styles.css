@@ -204,13 +204,29 @@ body {
     color: white;
 }
 
+.torna_dalt {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;    
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.torna_dalt > a > img {
+    margin-right: 50px;
+    width: 50px;
+}
+
+.torna_dalt > a > img:hover {
+    cursor: pointer;
+}
+
 /*********
 * Footer *
 *********/
 footer {
     bottom: 0;
     height: 10em;
-    margin-top: 13em;
     width: 100%;
     background-color: var(--color-fondo-menu);
     color: white;

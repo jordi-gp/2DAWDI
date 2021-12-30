@@ -126,9 +126,10 @@ body {
     font-weight: bold;
 }
 
-.button_mes_info > button {
+.button_mes_info > a > button {
     border: none;
     font-size: 17px;
+    margin-top: 20px;
     border-radius: 5px;
     text-decoration: none;
     background-color: var(--img-targ-backg);
@@ -140,7 +141,7 @@ body {
     justify-content: flex-end;
 }
 
-.button_mes_info > button:hover {
+.button_mes_info > a > button:hover {
     cursor: pointer;
     background-color: black;
     color: white;

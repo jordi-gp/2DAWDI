@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/template_grid.css" />
+    <link rel="stylesheet" href="../css/joc_concret.css" />
+    <script>
+        window.onload = main;
+
+        function main(){
+            //Elements del HTML
+            var reprod = document.getElementById("pause");
+            var audio = document.getElementById("audio_pag");
+
+            //Afegiment del event als controls d'udio
+            reprod.addEventListener("click", control_audio);
+            
+            //Funció per controlar l'audio de la pàgina
+            function control_audio() {
+                if(reprod.id == "pause") {
+                    reprod.setAttribute("src", "../../img/controles_audio/boto_pause.jpg");
+                    audio.pause();
+                    reprod.setAttribute("id", "play");
+                } else {
+                    reprod.setAttribute("src", "../../img/controles_audio/boto_play.jpg");
+                    audio.play();
+                    reprod.setAttribute("id", "pause");
+                }
+            }
+        }
+    </script>
+    <title>Dumstrang</title>
+</head>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 logo_header">
+                <h1 id="company_title">DotClassGames</h1>
+            </div>
+            <div class="col-6 menu_header">
+                <a href="../html/home.html">Home</a>
+                <a href="#">Presentació</a>
+                <a href="../html/jocs_general.html">Jocs</a>
+                <a href="../html/noticies_general.html">Notícies</a>
+                <a href="#">Galería</a>
+                <a href="../html/faqs.html">FAQ's</a>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container-fluid bloc_1">
+        <div class="row">
+            <div class="col-12 gravity_logo">
+                <img alt="dumstrang_logo" src="../../img/jocs/gravity_logo.png">
+                <h1>Gravity Long</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 reproductor">
+                <audio id="audio_pag" autoplay loop>
+                    <source src="../../audio/gravity_long_audio.mp3" type="audio/mpeg"  />
+                </audio>
+                <img alt="play_button" id="pause" src="../../img/controles_audio/boto_play.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bloc_2">
+        <div class="row">
+            <div class="col-12 titol-apartat">
+                <h1>Descripció</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4 descripcio">
+                <h1>Descripció</h1>
+                <p>
+                    Gravity Long es un videojoc 2D en el qual la mecànica
+                    principal del mateix es el canvi de gravetat.
+                </p>
+                <p>
+                    Aquest joc va nàixer d'una <span>'Jam'</span> organitzada per el desenvolupador
+                    de videojocs <span>'Alva Majo'</span>, una <span>'Jam'</span> es una espècie de concurs on  els
+                    participants han de desenvolupar un videojoc amb una temàtica, normalment
+                    donada per l'organitzador, en un temps reduit, en aquest cas va ser de poc
+                    més de 1 semana.
+                </p>
+                <p>
+                    En aquest joc el protagonista estarà en un somni, en el qual es trobarà amb ell
+                    mateix pero en les diferents etapes de la vida, per cada un dels nivells el seu
+                    objectiu serà arribar al final per poder completar-lo, tinguent per el cami plataformeig
+                    i algún que altre puzle que resolrde.
+                </p>
+                <div id="descarregar">
+                    <a href="https://dotclassgames.itch.io/gravity-long">Descarregar</a>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5 video">
+                <iframe width="550" height="400" src="https://www.youtube.com/embed/LXwO89rvdlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="container-fluid galeria">
+        <div class="row">
+            <div class="col-12 titol-apartat">
+                <h1>Galería</h1>
+            </div>
+        </div>
+        <div class="row content-galeria">
+            <div class="col-2"></div>
+            <div class="col-8 img_galeria">
+                <div class="imatge">
+                    <img alt="menu_joc" src="../../img/capturas_juegos/gravity_long/menu.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="seleccion_personatges" src="../../img/capturas_juegos/gravity_long/cafe.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="ataque_maga" src="../../img/capturas_juegos/gravity_long/nivell_1.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="foto_polado" src="../../img/capturas_juegos/gravity_long/nivell_2.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="batalla_poblado" src="../../img/capturas_juegos/gravity_long/nivell_3.jpg">
+                </div>
+                <div class="imatge">
+                    <img alt="nivel_castillo" src="../../img/capturas_juegos/gravity_long/nivell_4.jpg">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 titol-apartat">
+                <h1>Deixa'ns un comentari</h1>
+            </div>
+        </div>
+        <div class="row formulari">
+            <div class="col-3"></div>
+            <div class="col-6 content_form">
+                <form >
+                    <label for="nom_cognoms">Nom i Cognoms:</label>
+                    <input type="text" placeholder="Jordi García Pons" required>
+                    <label for="email">Correu Electrònic</label>
+                    <input type="email" placeholder="jordigarcia932@gmail.com" required>
+                    <textarea rows="10" cols="60" placeholder="Missatge a Enviar"></textarea>
+                    <div id="enviar">
+                        <input type="submit" id="boto_enviar" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container-fluid">
+        <div class="row cont_footer">
+            <div class="col-6 logo">
+                <img id="logo" src="../../img/logos/logo_dotclass_games.png">
+            </div>
+            <div class="col-3 informacio_extra">
+                <h3>Informació Extra</h3>
+                <ul class="lista_info">
+                    <li><a href="../html/contacte.html">P.Contacte</a></li>
+                    <li><a href="../html/suport.html">Suport</a></li>
+                    <li><a href="#">P. Privacitat</a></li>
+                </ul>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://www.instagram.com/dotclassgames/"><img alt="instagram" id="instagram" src="../../img/logos/instagram_logo.png"></a>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://twitter.com/dotclassgames"><img alt="twitter" class="rss" id="twitter" src="../../img/logos/twitter_logo.png"></a>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://dotclassgames.itch.io/"><img alt="itch-io" class="rss" id="itch-io" src="../../img/logos/itch-io_logo.png"></a>
+            </div>
+        </div>            
+    </div>
+</footer>
+</html>
