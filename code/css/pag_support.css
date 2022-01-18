@@ -1,0 +1,212 @@
+/*Configuración General del CSS*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Colors*/
+    --info-targ-backg: white;
+    --color-text-menu: orange;
+    --img-targ-backg: #C4C1BF;
+    --bg-color-button: #a39d9d;    
+    --header-text-color: white;
+    --color-fondo-menu: #252525;
+    --color-menu: rgb(64,64,64);
+    --sombreado: 10px 10px black;
+    --color-hover-button: #444343;
+    --color-barra-apartat: #930c0c;
+    --color-fondo-formulari: white;
+
+    /*Mesures*/
+    --tamany-header: 8em;    
+}
+
+/*********
+* Header *
+*********/
+header {
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    height: var(--tamany-header);
+    color: var(--header-text-color)
+}
+
+.logo_header {
+    height: var(--tamany-header);
+    display: flex;
+    justify-content: left;
+    padding-left: 40px;
+    align-items: center;
+}
+
+#company_title {
+    font-size: 40px;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.menu_header a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.menu_header a:hover {
+    color: var(--color-text-menu);
+}
+
+/*******
+* Body *
+*******/
+body {
+    background-color: var(--color-menu);
+}
+
+.h2 {
+    background-color: var(--color-fondo-formulari);
+    border-radius: 20px;
+    box-shadow: var(--sombreado);
+}
+
+.h2 > p {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.text_informatiu {
+    margin-top: 5em;
+    margin-bottom: 20px;
+}
+
+.formulari > * {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.formulari, .agraiment {
+    background-color: var(--color-fondo-formulari);
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: var(--sombreado);
+}
+
+input, label, select, textarea {
+    margin-top: 10px;
+    display: block;
+}
+
+.optionRadio {
+    display: inline-block;
+}
+
+#botoEnviar {
+    display: flex;
+    height: 80px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+#enviar {
+    border-style: none;
+    text-decoration: none;
+    background-color: var(--bg-color-button);
+    border-radius: 0.5vh;
+    border: 1px solid black;
+}
+
+#enviar:hover {
+    cursor: pointer;
+    background-color: var(--color-hover-button);
+    color: white;
+}
+
+.agraiment {
+    margin-top: 40px;
+}
+
+.agraiment > h1 {
+    font-size: 25px;
+}
+
+.agraiment > p {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+/*********
+* Footer *
+*********/
+footer {
+    bottom: 0;
+    position: relative;
+    height: 10em;
+    margin-top: 5em;
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    color: white;
+}
+
+.informacio_extra > * {
+    display: block;
+    padding: 0;
+}
+
+.informacio_extra h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.lista_info > li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista_info > li > a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.lista_info > li > a:hover {
+    color: var(--color-text-menu);
+}
+
+.rss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    align-items: center;
+}
+
+#logo {
+    height: 120px;
+}
+
+#instagram {
+    width: 100px;
+}
+
+#twitter {
+    width: 70px;
+}
+
+#itch-io {
+    width: 80px;
+}

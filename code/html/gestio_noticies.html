@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/template_grid.css" />
+    <link rel="stylesheet" href="../css/gestio_noticies.css" />
+    <title>Gestió de notícies</title>
+</head>
+<header>
+    <div class="container-fluid menu">
+        <div class="row">
+            <div class="col-6 logo_header">
+                <img src="../../img/logos/logo_dotclass_games.png">
+            </div>
+            <div class="col-6 menu_header">
+                <a href="#" id="pagAct">Gestió de Notícies</a>
+                <a href="#">Conf. Perfil</a>
+                <a href="#">Gestió Formularis Contacte</a>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container-fluid titol_camp">
+        <div class="row">
+            <div class="col-12 titol">
+                <h1>Gestió de Notícies</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid taula_pag">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 taula">
+                <table class="taula_info">
+                    <tr>
+                        <th>Notícia</th>
+                        <th>Data publicació</th>
+                        <th>Última modificació</th>
+                        <th>Estadístiques</th>
+                        <th>Visibilitat</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Gravity Long en Android</td>
+                        <td class="data">28/12/21</td>
+                        <td class="data">28/12/21</td>
+                        <td><a href="#!">Accedeix a les estadístiques</a></td>
+                        <td>
+                            <select>
+                                <option value="visible">Visible</option>
+                                <option value="oculta">Oculta</option>
+                            </select>
+                        </td>
+                        <td><a href="#!">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Nova versió de Dumstrang</td>
+                        <td class="data">29/12/21</td>
+                        <td class="data">29/12/21</td>
+                        <td><a href="#!">Accedeix a les estadístiques</a></td>
+                        <td>
+                            <select>
+                                <option value="visible">Visible</option>
+                                <option value="oculta">Oculta</option>
+                            </select>
+                        </td>
+                        <td><a href="#!">Editar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Gravity Long en Nintendo Switch</td>
+                        <td class="data">30/12/21</td>
+                        <td class="data">30/12/21</td>
+                        <td><a href="#!">Accedeix a les estadístiques</a></td>
+                        <td>
+                            <select>
+                                <option value="visible">Visible</option>
+                                <option value="oculta">Oculta</option>
+                            </select>
+                        </td>
+                        <td><a href="#!">Editar</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid afegir">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 form_afegiment">
+                <h1>Afegir una Nova Notícia</h1>
+                <form id="formulari" action="#">
+                    <label for="titNoticia">Títol de la notícia:</label>
+                    <input type="text" id="titol_noticia" name="titNoticia" placeholder="Títol" required>
+                    <label for="cosNoticia">Cos de la notícia:</label>
+                    <textarea rows="10" cols="60" placeholder="Cos de la notícia..." required></textarea>
+                    <label for="imatge_noticia">Imatge de la notícia</label>
+                    <input type="file" id="img_noticia" accept="image/*">
+                    <label>Categoría de la Notícia</label>
+                    <select>
+                        <option selected disabled>--Seleccionar Categoria--</option>
+                        <option value="Dumstrang">Dumstrang</option>
+                        <option value="Gravity_Long">Gravity Long</option>
+                        <option value="altres">Altres</option>
+                    </select>
+                    <label>Visibilitat</label>
+                    <select>
+                        <option selected disabled>--Seleccionar Visibilitat--</option>
+                        <option value="visible">Visible</option>
+                        <option value="oculta">Oculta</option>
+                    </select>
+                    <input type="submit" id="enviar_noticia" value="Afegir">
+                </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+</body>
+</html>

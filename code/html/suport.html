@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/template_grid.css" />
+    <link rel="stylesheet" href="../css/pag_support.css" />
+    <script>
+        window.onload = main;
+
+        /*Script per a que l'usuari no puga seleccionar una data*
+        *superior a l'actual a l'hora d'emplenar el formulari*/
+        function main() {
+            var dataACt = new Date();
+
+            var any = dataACt.getFullYear();
+            var mes = dataACt.getMonth() + 1;
+            var dia = dataACt.getDate();
+
+            var data = document.getElementById("dataIncidencia");
+
+            data.setAttribute("max", any+"-"+mes+"-"+dia);
+        }
+    </script>
+    <title>Pàgina de Suport</title>
+</head>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 logo_header">
+                <h1 id="company_title">DotClassGames</h1>
+            </div>
+            <div class="col-6 menu_header">
+                <a href="../html/home.html">Home</a>
+                <a href="#">Presentació</a>
+                <a href="../html/jocs_general.html">Jocs</a>
+                <a href="../html/noticies_general.html">Notícies</a>
+                <a href="#">Galería</a>
+                <a href="../html/faqs.html">FAQ's</a>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container-fluid">
+        <div class="row text_informatiu">
+            <div class="col-3"></div>
+            <div class="col-6 h2">
+                <h1>Atenció a l'usuari</h1>
+                <p>
+                    Desde DotClassGames ens agrada asegurar-nos que els productes i serveis que oferim als nostres clients
+                    siguen el millor possibles, però tampoc som perfectes, per el que en ocasions pot ocorrer que l'usuari
+                    final en algún moment trobe alguna incidència, en cas de ser així es troba disponible aquesta pàgina,
+                    que com el seu nom indica, serveix per reportar totes aquelles incidències, que es troben, per poder ser
+                    notificades i en un futur solucionades.
+                </p>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 formulari">
+                <h1>Report del problema</h1>
+                <form>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nomUsuari" name="nom" required>
+                    <label for="correu">Correu Electrònic</label>
+                    <input type="email" id="correuUsuari" name="correu" required>
+                    <label for="camp_incidencia">Camp en que s'ha trobat l'incidència</label>
+                    <select>
+                        <option disabled selected>--Camp de l'incidència--</option>
+                        <option>Dumstrang</option>
+                        <option>Gravity Long</option>
+                        <option>Altres</option>
+                    </select>
+                    <label for="data">Data en que s'ha trobat l'indicència</label>
+                    <input type="date" id="dataIncidencia" required>
+                    <label for="incidenciaTrobada">Incidència que s'ha trobat</label>
+                    <textarea rows="10" cols="60" placeholder="Incidència..."></textarea>
+                    <label for="numIncidencies">Cuantes vegades has patit aquesta incidència</label>
+                    <label>
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="1" required> 1 vegada
+                    </label>
+                    <label>
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="2" required> 1 a 3 vegades
+                    </label>
+                    <label>
+                        <input type="radio" class="optionRadio" name="numIncidencies" value="2" required> Més de 5 vegades
+                    </label>
+                    <div id="botoEnviar">
+                        <input type="submit" id="enviar" value="Enviar Formulari">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 agraiment">
+                <h1>Agraïments</h1>
+                <p>
+                    Gracies a les incidències reportades, tant els serveis com els productes milloren de cara al futur
+                    que es el que realment importa, per el que desde l'equip de DotCLassGames agraïm la comunicació entre
+                    l'usuari i l'empresa quan es tracta d'ajudar a millorar.
+                </p>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container-fluid">
+        <div class="row cont_footer">
+            <div class="col-6 logo">
+                <img id="logo" src="../../img/logos/logo_dotclass_games.png">
+            </div>
+            <div class="col-3 informacio_extra">
+                <h3>Informació Extra</h3>
+                <ul class="lista_info">
+                    <li><a href="../html/contacte.html">P.Contacte</a></li>
+                    <li><a href="#!">Suport</a></li>
+                    <li><a href="#">P. Privacitat</a></li>
+                </ul>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://www.instagram.com/dotclassgames/"><img alt="instagram" id="instagram" src="../../img/logos/instagram_logo.png"></a>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://twitter.com/dotclassgames"><img alt="twitter" class="rss" id="twitter" src="../../img/logos/twitter_logo.png"></a>
+            </div>
+            <div class="col-1 rss">
+                <a href="https://dotclassgames.itch.io/"><img alt="itch-io" class="rss" id="itch-io" src="../../img/logos/itch-io_logo.png"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

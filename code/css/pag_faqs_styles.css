@@ -4,32 +4,29 @@
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
-}
-
 :root{
-    --header-footer-text-color: white;
+    /*Colors*/
+    --info-targ-backg: white;
+    --color-text-menu: orange;
+    --header-text-color: white;
+    --color-fondo-menu: #252525;    
     --color-menu: rgb(64,64,64);
-    --color-fondo-menu: #252525;
+    --sombreado: 10px 10px black;
+    --color-hover-button: #444343;
     --color-barra-apartat: #930c0c;
 
     /*Mesures*/
     --tamany-header: 8em;
-    --tamany-img-joc: 15em;
-}
-
-@font-face {
-    font-family: "Press_2P";
-    src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
 }
 
 /*********
 * Header *
 *********/
-.header {
+header {
+    width: 100%;
     background-color: var(--color-fondo-menu);
-    color: var(--header-footer-text-color);
+    height: var(--tamany-header);
+    color: var(--header-text-color)
 }
 
 .logo_header {
@@ -67,96 +64,95 @@ html {
     color: var(--color-text-menu);
 }
 
+.titol-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-barra-apartat);
+}
+
 /*******
 * Body *
 *******/
+
 body {
     background-color: var(--color-menu);
     height: 100vh;
 }
 
-.bloc_jocs {
-    margin-top: 4em;
-    margin-bottom: -4em;
-}
-
-.titol-pag {
+.imatge_banner {
     display: flex;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.joc > img {
-    align-self: center;
-}
-
-.imatge_joc {
-    display: flex;
-    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 1em;
-    background-color: var(--img-targ-backg);
+    justify-content: center;
 }
 
-.info_joc {
-    border: 2px solid black;
-    border-radius: 1em;
+.imatge_banner > img {
+    height: 350px;
+    width: 600px;
+}
+
+#text_desc {
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info {
+    border-radius: 5px;
     background-color: var(--info-targ-backg);
-    flex-wrap: wrap;
+    box-shadow: var(--sombreado);
 }
 
-.info_joc > h1 {
-    font-family: "Press_2P";
-    padding-top: 0.5em;
-    font-size: 1.7em;
+.info > h1 {
+    font-size: 25px;
+    text-align: center;
 }
 
-.info_joc > p {
-    margin-top: 1vh;
-    line-height: 25px;
+.pregunta {
+    color: red;
+    font-size: 35px;
+}
+
+.content_pregunta {
+    padding-left: 20px;
+}
+
+.content_resposta {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content_resposta > p {
+    align-self: flex-end;
+    padding-left: 14px;
+    margin-bottom: 7px;
     font-size: 20px;
 }
 
-.joc_destacat {
-    font-weight: bold;
-}
-
-.button_mes_info > a > button {
-    border: none;
-    font-size: 17px;
-    margin-top: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: var(--img-targ-backg);
-}
-
-.button_mes_info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.button_mes_info > a > button:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-}
-
-#dumstrang, #gravity_logo {
-    width: var(--tamany-img-joc);
+.resposta {
+    color: var(--color-hover-button);
+    font-size: 35px;
 }
 
 /*********
 * Footer *
 *********/
 footer {
-    height: 10em;
-    width: 100%;
     bottom: 0;
-    position: absolute;
-    color: var(--header-footer-text-color);
+    height: 10em;
+    margin-top: 8em;
+    width: 100%;
     background-color: var(--color-fondo-menu);
+    color: white;
+}
+
+.informacio_extra > * {
+    display: block;
+    padding: 0;
 }
 
 .informacio_extra h3 {
@@ -173,6 +169,7 @@ footer {
 .lista_info > li > a {
     text-decoration: none;
     color: white;
+
 }
 
 .lista_info > li > a:hover {
@@ -183,7 +180,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -10px;
+    margin-left: -20px;
 }
 
 .logo {
@@ -194,7 +191,7 @@ footer {
 }
 
 #logo {
-    height: 100px;
+    height: 120px;
 }
 
 #instagram {

@@ -4,32 +4,30 @@
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
-}
-
 :root{
-    --header-footer-text-color: white;
+    /*Colors*/
+    --color-text-menu: orange;
+    --header-text-color: white;
+    --bg-color-button: #a39d9d;
     --color-menu: rgb(64,64,64);
     --color-fondo-menu: #252525;
+    --bg-color-blocs-info: white;
+    --sombreado: 10px 10px black;
+    --color-hover-button: #444343;
     --color-barra-apartat: #930c0c;
 
     /*Mesures*/
     --tamany-header: 8em;
-    --tamany-img-joc: 15em;
-}
-
-@font-face {
-    font-family: "Press_2P";
-    src:url(../../fonts/Press_Start/PressStart2P-Regular.ttf);
 }
 
 /*********
 * Header *
 *********/
-.header {
+header {
+    width: 100%;
     background-color: var(--color-fondo-menu);
-    color: var(--header-footer-text-color);
+    height: var(--tamany-header);
+    color: var(--header-text-color)
 }
 
 .logo_header {
@@ -67,6 +65,14 @@ html {
     color: var(--color-text-menu);
 }
 
+.titol-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-barra-apartat);
+}
+
 /*******
 * Body *
 *******/
@@ -75,88 +81,87 @@ body {
     height: 100vh;
 }
 
-.bloc_jocs {
-    margin-top: 4em;
-    margin-bottom: -4em;
-}
-
-.titol-pag {
+/*Imatge situada en el centre de la pàgina*/
+.imatge_contacte {
     display: flex;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.joc > img {
-    align-self: center;
-}
-
-.imatge_joc {
-    display: flex;
-    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 1em;
-    background-color: var(--img-targ-backg);
+    justify-content: center;
 }
 
-.info_joc {
-    border: 2px solid black;
-    border-radius: 1em;
-    background-color: var(--info-targ-backg);
-    flex-wrap: wrap;
+/*Separació entre els dos blocs*/
+#espai {
+    margin-right: -40px;
+    margin-left: -40px;
 }
 
-.info_joc > h1 {
-    font-family: "Press_2P";
-    padding-top: 0.5em;
-    font-size: 1.7em;
-}
-
-.info_joc > p {
-    margin-top: 1vh;
-    line-height: 25px;
-    font-size: 20px;
-}
-
-.joc_destacat {
-    font-weight: bold;
-}
-
-.button_mes_info > a > button {
-    border: none;
-    font-size: 17px;
-    margin-top: 20px;
+/*Apartat del formulari*/
+.info_1, .info_2 {
     border-radius: 5px;
-    text-decoration: none;
-    background-color: var(--img-targ-backg);
+    box-shadow: var(--sombreado);
+    background-color: var(--bg-color-blocs-info);
 }
 
-.button_mes_info {
+.info_1 > h1, .info_2 > h1 {
+    font-size: 30px;
+}
+
+#titulo {
+    margin-bottom: 10px;
+}
+
+.info_extra {
+    line-height: 35px;
+}
+
+input {
+    width: 15em;
+}
+
+input, label, textarea {
+    display: block;
+    margin-top: 10px;
+}
+
+#enviar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.button_mes_info > a > button:hover {
+#boto_enviar {
+    margin-top: 30px;
+    height: 2.5em;
+    width: 5em;
+    border-style: none;
+    text-decoration: none;
+    background-color: var(--bg-color-button);
+    border-radius: 0.5vh;
+    border: 1px solid black;
+}
+
+#boto_enviar:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: var(--color-hover-button);
     color: white;
-}
-
-#dumstrang, #gravity_logo {
-    width: var(--tamany-img-joc);
 }
 
 /*********
 * Footer *
 *********/
 footer {
-    height: 10em;
-    width: 100%;
     bottom: 0;
-    position: absolute;
-    color: var(--header-footer-text-color);
+    height: 10em;
+    margin-top: 8em;
+    width: 100%;
     background-color: var(--color-fondo-menu);
+    color: white;
+}
+
+.informacio_extra > * {
+    display: block;
+    margin-top: 10px;
+    padding: 0;
 }
 
 .informacio_extra h3 {
