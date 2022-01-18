@@ -114,9 +114,8 @@ body {
 *********/
 footer {
     bottom: 0;
-    height: 10em;
     width: 100%;
-    /* position: fixed; */
+    /* position: absolute; */
     color: white;
 }
 
