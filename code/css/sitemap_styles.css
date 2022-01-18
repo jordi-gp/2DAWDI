@@ -69,7 +69,8 @@ header {
 *******/
 body {
     background-color: var(--color-menu);
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100%;
 }
 
 .titol-pag {
@@ -115,9 +116,13 @@ footer {
     bottom: 0;
     height: 10em;
     width: 100%;
-    position: relative;
-    background-color: var(--color-fondo-menu);
+    /* position: fixed; */
     color: white;
+}
+
+.cont_footer {
+    display: flex;
+    background-color: var(--color-fondo-menu);
 }
 
 .informacio_extra > * {
