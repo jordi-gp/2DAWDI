@@ -68,8 +68,18 @@ header {
 * Body *
 *******/
 body {
+    /* min-height: 100%; */
     background-color: var(--color-menu);
-    /* height: 100vh; */
+}
+
+.contenedor-general {
+    
+}
+
+main {
+    margin-bottom: 110px;
+    position: relative;
+    border: 1px solid red;
     min-height: 100%;
 }
 
@@ -84,6 +94,8 @@ body {
 .sitemap_info {
     margin-top: 3em;
     margin-bottom: 3em;
+    background-color: lightgray;
+    border-radius: 5px;
     border: 3px solid var(--color-barra-apartat);
 }
 
@@ -102,11 +114,11 @@ body {
 .sitemap_info a {
     text-decoration: none;
     font-size: 20px;
-    color: lightgray;
+    color: black;
 }
 
 .sitemap_info a:hover {
-    color: black;
+    text-decoration: underline;
 }
 
 /*********
@@ -115,7 +127,8 @@ body {
 footer {
     bottom: 0;
     width: 100%;
-    /* position: absolute; */
+    height: 110px;
+    position: absolute;
     color: white;
 }
 
@@ -179,3 +192,19 @@ footer {
 #itch-io {
     width: 80px;
 }
+
+/** apartat responsive */
+
+/* For mobile phones */
+/* @media only screen and (max-width: 600px) {
+    
+    .row {
+      flex-direction: column;
+    }
+    .container {
+      width: 100%;
+    }
+    [class*="col-"] {
+      width: 100%;
+    }
+} */
