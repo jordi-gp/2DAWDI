@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Variables utilitzades*/
+:root {
+    /*Colors*/
+    --color-text-menu: orange;
+    --header-text-color: white;
+    --color-menu: rgb(64,64,64);
+    --color-fondo-menu: #252525;
+    --bg-color-blocs-info: white;
+    --color-barra-apartat: #930c0c;
+
+    /*Mesures*/
+    --tamany-header: 8em;
+}
+
+/*********
+* Header *
+*********/
+header {
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    height: var(--tamany-header);
+    color: var(--header-text-color)
+}
+
+.logo_header {
+    height: var(--tamany-header);
+    display: flex;
+    justify-content: left;
+    padding-left: 40px;
+    align-items: center;
+}
+
+#company_title {
+    font-size: 40px;
+}
+
+#pagAct {
+    color: var(--color-text-menu);
+    font-weight: bold;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.menu_header a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.menu_header a:hover {
+    color: var(--color-text-menu);
+}
+
+.titol-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-barra-apartat);
+}
+
+/*******
+* Main *
+*******/
+body {
+    background: var(--color-menu);
+    min-height: 100%;
+}
+
+.info {
+    border-radius: 5px;
+    background: white;
+    border: 2px solid black;
+    /* margin-top: 2em; */
+    /* margin-bottom: 4em; */
+    display: flex;
+    flex-direction: column;
+}
+
+.informacio_politica {
+    padding: 2em;
+}
+
+.info > * {
+    padding: 0.2em;
+}
+
+.torna_dalt {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+/*********
+* Footer *
+*********/
+footer {
+    bottom: 0;
+    height: 10em;
+    width: 100%;
+    color: white;
+}
+
+.cont_footer {
+    display: flex;
+    background-color: var(--color-fondo-menu);
+}
+
+.informacio_extra > * {
+    display: block;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.informacio_extra h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.lista_info > li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista_info > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista_info > li > a:hover {
+    color: var(--color-text-menu);
+}
+
+.rss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    align-items: center;
+}
+
+#logo {
+    height: 100px;
+}
+
+#instagram {
+    width: 100px;
+}
+
+#twitter {
+    width: 70px;
+}
+
+#itch-io {
+    width: 80px;
+}
