@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!--Header de la plana-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" id="nav_menu">
             <div class="container-fluid">
@@ -25,7 +26,6 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <!--Menú de la pàgina-->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="anclaMenu" class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -33,21 +33,68 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cocina</a>
+                            <a class="nav-link" href="#">Presentació</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Barra</a>
+                            <a class="nav-link" href="#">Jocs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sala</a>
+                            <a href="" class="nav-link">Notícies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">FAQ'S</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!--Contingut main de la plana-->
     <main>
+        <!--Cos de la notícia-->
+        <div class="container-fluid">
+            <div class="row justify-content-center py-4">
+                <div class="col-10 col-md-8" style="border: 1px solid green; color: white;">
+                    <h1 class="text-start">Títol de la notícia</h1>
+                    <p>Resum breu sobre la notícia</p>
+                </div>
+            </div>
+            <div class="row justify-content-center py-4">
+                <div class="col-10">
+                    <img src="../../img/noticies/dumstrang_version.jpg" class="img-fluid mx-auto d-block" alt="Nova Versió de Dumstrang">
+                </div>
+            </div>
+            <div class="row justify-content-center py-4">
+                <div class="col-10 col-md-8" style="border: 1px solid green; color: white;">
+                    <h1 class="text-start">Continuació de la notícia</h1>
+                    <p>Cos sobre la notícia</p>
+                </div>
+            </div>
+        </div>
+        <!--Formulari per rebre informació publicitaria-->
+        <div class="container-fluid">
+            <div class="row justify-content-center py-4">
+                <div class="col-8 col-md-6 col-lg-4 formulari_noticiari" style="border-radius: 5px; padding: 1em">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correu Electrònic</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="example@gmail.com">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Dessitge rebre informació sobre notícies per part de DotClassGames</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mx-auto d-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
+    <!--Footer de la plana-->
     <footer>
         <div class="container-fluid">
             <div class="row cont_footer">
@@ -64,13 +111,16 @@
                     </ul>
                 </div>
                 <div class="col-12 col-md-1 rss">
-                    <a href="https://www.instagram.com/dotclassgames/"><img alt="instagram" id="instagram" src="../../img/logos/instagram_logo.png"></a>
+                    <a href="https://www.instagram.com/dotclassgames/"><img alt="instagram" id="instagram"
+                            src="../../img/logos/instagram_logo.png"></a>
                 </div>
                 <div class="col-12 col-md-1 rss">
-                    <a href="https://twitter.com/dotclassgames"><img alt="twitter" class="rss" id="twitter" src="../../img/logos/twitter_logo.png"></a>
+                    <a href="https://twitter.com/dotclassgames"><img alt="twitter" class="rss" id="twitter"
+                            src="../../img/logos/twitter_logo.png"></a>
                 </div>
                 <div class="col-12 col-md-1 rss">
-                    <a href="https://dotclassgames.itch.io/"><img alt="itch-io" class="rss" id="itch-io" src="../../img/logos/itch-io_logo.png"></a>
+                    <a href="https://dotclassgames.itch.io/"><img alt="itch-io" class="rss" id="itch-io"
+                            src="../../img/logos/itch-io_logo.png"></a>
                 </div>
             </div>
         </div>

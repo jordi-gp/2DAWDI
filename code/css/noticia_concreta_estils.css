@@ -57,13 +57,17 @@ body {
     background-color: var(--color-menu);
 }
 
+.formulari_noticiari {
+    background-color: lightgray;
+}
+
 /*********
 * Footer *
 *********/
 footer {
     bottom: 0;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     color: white;
 }
 
