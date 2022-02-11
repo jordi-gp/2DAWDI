@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Colors*/
+    --color-text-menu: orange;
+    --header-text-color: white;
+    --color-bg-button: #9f9e9c;
+    --color-menu: rgb(64,64,64);
+    --color-fondo-menu: #252525;
+    --color-barra-apartat: #F59F1A;
+    --color-bloc-not-dest: #FF5733;
+
+    /*Mides*/
+    --tamany-header: 6em;
+}
+
+/*********
+* Header *
+*********/
+header {
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    height: var(--tamany-header);
+    color: var(--header-text-color);
+}
+
+.boto_desplegable {
+    border: 2px solid white;
+    background-color: white;
+}
+
+#anclaMenu {
+    background-color: white;
+    border: 2px solid var(--color-text-menu);
+    border-radius: 2px;
+    width: 15em;
+}
+
+#anclaMenu > li > a {
+    color: white;
+    background: var(--color-fondo-menu);
+    padding-left: 1em;
+}
+
+#anclaMenu > li > a:hover {
+    color: var(--color-text-menu);
+}
+
+/*******
+* Body *
+*******/
+body {
+    background-color: var(--color-menu);
+}
