@@ -104,6 +104,13 @@ body {
     transition: transform .2s;
 }
 
+.desc_imatge {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
 .imatge > img:hover {
     cursor: pointer;
     transform: scale(1.25);

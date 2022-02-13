@@ -44,6 +44,7 @@ header {
     color: white;
     background: var(--color-fondo-menu);
     padding-left: 1em;
+    font-size: 25px;
 }
 
 #anclaMenu > li > a:hover {
@@ -55,6 +56,12 @@ header {
 *******/
 body {
     background-color: var(--color-menu);
+}
+
+.cos_noticia {
+    color: black;
+    background: white;
+    border-radius: 5px;
 }
 
 .formulari_noticiari {
@@ -112,7 +119,7 @@ footer {
 }
 
 #logo {
-    height: 100px;
+    height: 125px;
 }
 
 #instagram {

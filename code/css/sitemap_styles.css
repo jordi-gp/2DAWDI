@@ -78,7 +78,6 @@ body {
 main {
     margin-bottom: 110px;
     position: relative;
-    border: 1px solid red;
     min-height: 100%;
 }
 
