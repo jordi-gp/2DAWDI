@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Colors*/
+    --color-text-menu: orange;
+    --header-text-color: white;
+    --color-bg-button: #9f9e9c;
+    --color-menu: rgb(64,64,64);
+    --color-fondo-menu: #252525;
+    --color-barra-apartat: #F59F1A;
+    --color-bloc-not-dest: #FF5733;
+    --color-titol-apartat: #930c0c;
+
+    /*Mides*/
+    --tamany-header: 6em;
+}
+
+/*********
+* Header *
+*********/
+header {
+    width: 100%;
+    background-color: var(--color-fondo-menu);
+    height: var(--tamany-header);
+    color: var(--header-text-color)
+}
+
+.logo_header {
+    height: var(--tamany-header);
+    display: flex;
+    justify-content: left;
+    padding-left: 40px;
+    align-items: center;
+}
+
+#company_title {
+    font-size: 40px;
+}
+
+#pagAct {
+    color: var(--color-text-menu);
+    font-weight: bold;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.menu_header a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.menu_header a:hover {
+    color: var(--color-text-menu);
+}
+
+.titol-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-barra-apartat);
+}
+
+/*******
+* Body *
+*******/
+body {
+    background-color: var(--color-menu);
+}
+
+/*Títol de la plana*/
+.titol-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-titol-apartat);
+}
+
+/*Primera fila de la plana*/
+.logo_gran {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_gran > img {
+    width: 40em;
+    height: 20em;
+    padding: 2em;
+}
+
+/*Segona fila de la plana*/
+.descripcio_equip {
+    padding: 2em;
+}
+
+.descripcio {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.descripcio > * {
+    line-height: 1.6;
+    padding: 0.3em;
+}
+
+/*Tercera fila, descripció dels integrants del grup*/
+.bloc_info {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.nom_integrant {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info_personal {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_personal > p {
+    line-height: 1.6;
+}
+
+.foto_integrant {
+    width: 20em;
+    border-radius: 5px;
+}
+
+/*Fletxa per tornar amunt*/
+.torna_dalt {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.torna_dalt > a > img {
+    height: 3em;
+}
+
+/*********
+* Footer *
+*********/
+footer {
+    bottom: 0;
+    width: 100%;
+    /* position: absolute; */
+    color: white;
+}
+
+.cont_footer {
+    display: flex;
+    background-color: var(--color-fondo-menu);
+}
+
+.informacio_extra {
+    padding-top: 1em;
+}
+
+.informacio_extra h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.lista_info > li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.lista_info > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista_info > li > a:hover {
+    color: var(--color-text-menu);
+}
+
+.rss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: center;
+    padding-left: 50px;
+    align-items: center;
+}
+
+#logo {
+    height: 125px;
+}
+
+#instagram {
+    width: 100px;
+}
+
+#twitter {
+    width: 70px;
+}
+
+#itch-io {
+    width: 80px;
+}
