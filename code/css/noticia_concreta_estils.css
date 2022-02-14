@@ -35,11 +35,6 @@ header {
     background-color: white;
 }
 
-#anclaMenu {
-    background-color: white;
-    width: 15em;
-}
-
 #anclaMenu > li > a {
     color: white;
     background: var(--color-fondo-menu);
@@ -60,12 +55,17 @@ body {
 
 .cos_noticia {
     color: black;
+    text-align: justify;
     background: white;
     border-radius: 5px;
 }
 
 .formulari_noticiari {
     background-color: lightgray;
+}
+
+.fletxa_amunt {
+    width: 3.5em;
 }
 
 /*********
@@ -81,6 +81,10 @@ footer {
 .cont_footer {
     display: flex;
     background-color: var(--color-fondo-menu);
+}
+
+.informacio_extra {
+    padding-top: 1em;
 }
 
 .informacio_extra h3 {
