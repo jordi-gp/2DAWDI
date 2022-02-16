@@ -131,6 +131,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.info_personal {
+    border-radius: 0px 5px 5px 0px;
 }
 
 .info_personal > * {
@@ -153,8 +158,27 @@ body {
     height: 3em;
 }
 
-@media only screen and (max-width: 600px) {
+.bloc {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
+@media only screen and (max-width: 800px) {
+    .info_personal > h1 {
+        text-align: center;
+    }
+
+    .info_img {
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .info_personal {
+        border-radius: 0px 0px 5px 5px;
+    }
+    
+    .bloc {
+        margin: 0;
+    }
 }
 
 /*********
