@@ -109,7 +109,32 @@ body {
     text-align: center;
 }
 
+/*Tamany de telefons*/
 @media only screen and (max-width: 800px) {
+    .logo_header {
+        justify-content: center;
+    }
+
+    /*Intent de menú responsive*/
+    #menu_obert {
+        display: none;
+    }
+
+    #menu_tancat {
+        justify-content: center;
+    }
+
+    #menu_tancat:hover {
+        cursor: pointer;
+        color: var(--color-text-menu)
+    }
+
+    /* .menu_header {
+        flex-direction: column;
+        z-index: 20;
+        background-color: black;
+    } */
+    
     .imatge > img {
         max-width: 22em;
     }
