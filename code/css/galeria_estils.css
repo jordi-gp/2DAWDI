@@ -54,8 +54,11 @@ header {
 .menu_header a {
     text-decoration: none;
     color: var(--header-text-color);
-    padding-right: 20px;
     font-size: 25px;
+}
+
+.enc_menu {
+    padding-right: 10px;
 }
 
 .menu_header a:hover {
@@ -109,18 +112,25 @@ body {
     text-align: center;
 }
 
+#menu_tancat {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .logo_header {
+        justify-content: center !important;
+    }
+}
+
 /*Tamany de telefons*/
 @media only screen and (max-width: 800px) {
-    .logo_header {
-        justify-content: center;
-    }
-
     /*Intent de menú responsive*/
     #menu_obert {
         display: none;
     }
 
     #menu_tancat {
+        display: flex;
         justify-content: center;
     }
 
@@ -128,12 +138,6 @@ body {
         cursor: pointer;
         color: var(--color-text-menu)
     }
-
-    /* .menu_header {
-        flex-direction: column;
-        z-index: 20;
-        background-color: black;
-    } */
     
     .imatge > img {
         max-width: 22em;

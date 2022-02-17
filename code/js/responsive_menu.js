@@ -17,8 +17,8 @@ function obreMenu() {
         menu_ob.style.background = "black";
         menu_ob.style.zIndex = 20;
     }
-    console.log("a");
     console.log(menu_ob.style.display)
+    document.getElementById("tancar_menu").innerHTML = "Tanca el Menú";
 }
 
 //Funció per tancar el menú en telèfons
