@@ -3,3 +3,90 @@
     box-sizing: border-box;
 }
 
+:root {
+    /*Colors*/
+    --color-th: #1fb9f3;
+    --color-titol-pag: #55aff6;
+    --color-pag-actual: #42dd08;
+    --color-barra-menu: #5c5d5d;
+    --color-fondo-body: #c1cabe;
+    --negre: black;
+    --color-fondo-blocs: lightblue;
+}
+
+/*********
+* Header *
+*********/
+
+/*Menú general*/
+.menu {
+    background-color: var(--color-barra-menu);
+}
+
+/*Imatge de la part esquerre de la plana*/
+.logo_header {
+    padding-left: 3em;
+}
+
+.logo_header > img {
+    width: 7.5em;
+    height: auto;
+}
+
+/*Enllaços de la part dreta de la plana*/
+.enllaç_menu:hover {
+    color: var(--negre);
+}
+
+#pagAct {
+    font-weight: bold;
+    color: var(--color-pag-actual);
+}
+
+/*******
+* Main *
+*******/
+body {
+    background: var(--color-fondo-body);
+}
+
+/*Part esquerre, imatge del perfil*/
+#imatge_perfil {
+    border-radius: 5px;
+    max-height: 25em;
+    border: 1px solid var(--negre);
+    background-color: var(--color-fondo-blocs);
+}
+
+#segon_bloc {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    /* justify-content: center; */
+    border: 1px solid var(--negre);
+    background-color: white;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+    border: 1px solid var(--negre);
+    background-color: lightgray;
+}
+
+.bloc_info {
+    border-radius: 5px;
+    background-color: var(--color-fondo-blocs);
+    border: 1px solid var(--negre);
+}
+
+.bloc_info > button {
+    margin-bottom: 1em;
+}
+
+.bloc_info > p {
+    padding-bottom: 0.5em;
+    margin: 0;
+}

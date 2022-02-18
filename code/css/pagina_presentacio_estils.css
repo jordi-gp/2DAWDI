@@ -163,7 +163,30 @@ body {
     margin-bottom: 1em;
 }
 
+#menu_tancat {
+    display: none;
+}
+
 @media only screen and (max-width: 800px) {
+/*Intent de menú responsive*/
+    #menu_obert {
+        display: none;
+    }
+
+    #menu_tancat {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu_tancat:hover {
+        cursor: pointer;
+        color: var(--color-text-menu)
+    }
+    
+    .imatge > img {
+        max-width: 22em;
+    }
+
     .info_personal > h1 {
         text-align: center;
     }
@@ -180,6 +203,13 @@ body {
         margin: 0;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .logo_header {
+        justify-content: center !important;
+    }
+}
+
 
 /*********
 * Footer *
