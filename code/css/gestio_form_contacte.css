@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Colors*/
+    --color-th: #1fb9f3;
+    --color-titol-pag: #55aff6;
+    --color-pag-actual: #42dd08;
+    --color-barra-menu: #5c5d5d;
+    --color-fondo-body: #c1cabe;
+    --color-fondo-blocs: lightblue;
+}
+
+/*********
+* Header *
+*********/
+
+/*Apartat del header*/
+.menu {
+    background-color: var(--color-barra-menu);
+}
+
+.logo_header {
+    padding-left: 3em;
+}
+
+.logo_header>img {
+    margin-left: 2em;
+    width: 7.5em;
+}
+
+.menu_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu_header>a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 4px;
+}
+
+.menu_header>a:hover {
+    color: black !important;
+}
+
+#pagAct {
+    font-weight: bold;
+    color: var(--color-pag-actual);
+}
+
+#menu_tancat {
+    display: none;
+}
+
+#menu_tancat>h2 {
+    color: white;
+}
+
+#menu_tancat>h2:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 480px) {
+    .logo_header {
+        padding: 0;
+        margin-top: 1em;
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+/*Tamany de telèfons*/
+@media only screen and (max-width: 800px) {
+    .logo_header {
+        margin-top: 1em;
+        padding: 0;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    /*Intent de menú responsive*/
+    #menu_obert {
+        background-color: var(--color-barra-menu) !important;
+        display: none;
+    }
+
+    #menu_tancat {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu_tancat:hover {
+        cursor: pointer;
+        color: var(--color-text-menu)
+    }
+
+    .imatge>img {
+        max-width: 22em;
+    }
+}
+
+/*******
+* Main *
+*******/
+body {
+    background-color: var(--color-fondo-body);
+}
+
+.page_tit {
+    background-color: var(--color-titol-pag);
+}
+
+/*Títol de la plana*/
+#tit_apartat {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*Tabla amb l'informació a gestionar*/
+.div_tabla {
+    margin-top: 2em;
+    border: 1px solid black;
+    background-color: var(--color-fondo-blocs);
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.capçalera_tabla {
+    background-color: #1fb9f3;
+}
+
+table tr {
+    background-color: white;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 0.6em;
+    text-align: center;
+}
+
+.info {
+    text-align: left !important;
+}
+
+tbody > tr > td {
+    word-break: break-all;
+}
+
+/*Adaptació a telèfons mòvils de la tabla*/
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    .info {
+        text-align: right !important;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    table td {
+        word-break: break-all;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*L'estil de la línea de baix s'encarrega de posar el valor
+        * que en l'HTML es troba en l'etiqueta <td> amb l'atribut 'data-label'*/
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
