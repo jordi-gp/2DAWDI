@@ -33,14 +33,18 @@
     height: auto;
 }
 
+.enllaç_menu {
+    color: white !important;
+}
+
 /*Enllaços de la part dreta de la plana*/
 .enllaç_menu:hover {
-    color: var(--negre);
+    color: var(--negre) !important;
 }
 
 #pagAct {
     font-weight: bold;
-    color: var(--color-pag-actual);
+    color: var(--color-pag-actual) !important;
 }
 
 /*******

@@ -87,6 +87,8 @@ body {
     background-color: var(--color-titol-apartat);
 }
 
+
+
 /*Primera fila de la plana*/
 .logo_gran {
     display: flex;
@@ -207,6 +209,14 @@ body {
 @media only screen and (max-width: 480px) {
     .logo_header {
         justify-content: center !important;
+    }
+
+    .titol_pag {
+        margin-top: 2em;
+    }
+    
+    #menu {
+        background-color: var(--color-fondo-menu);
     }
 }
 
