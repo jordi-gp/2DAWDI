@@ -23,9 +23,9 @@
                     <h2>Menú</h2>
                 </div>
                 <div class="col-6 menu_header" id="menu_obert">
-                    <a href="#" class="enc_menu" id="pagAct">Gestió de Notícies</a>
-                    <a href="#" class="enc_menu">Conf. Perfil</a>
-                    <a href="#">Gestió Formularis Contacte</a>
+                    <a href="../html/gestio_noticies.html" class="enc_menu">Gestió de Notícies</a>
+                    <a href="../html/configuracio_perfil.html" class="enc_menu">Conf. Perfil</a>
+                    <a href="#" id="pagAct">Gestió Formularis Contacte</a>
                     <a href="#" id="tancar_menu"></a>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <h1 id="tit_apartat">Gestió de Formularis de Contacte</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="taules_gestio">
                 <div class="col-1"></div>
                 <div class="col-10 div_tabla">
                     <table>
@@ -56,10 +56,10 @@
                         <!--Contingut de la taula-->
                         <tbody>
                             <tr>
-                                <td data-label="Asumpte">Asumpte 1</td>
-                                <td data-label="Correu Electrònic">example@gmail.com</td>
+                                <td data-label="Asumpte">Edició de notícia</td>
+                                <td data-label="Correu Electrònic">jordigarcia932@gmail.com</td>
                                 <td data-label="Data">25/08/2021</td>
-                                <td class="info" data-label="Informació">Informació</td>
+                                <td class="info" data-label="Informació">Caldría editar una de les notícies, per millorar el contingut</td>
                                 <td data-label="Estat">
                                     <label>
                                         <input type="checkbox" value="checked">
@@ -68,10 +68,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td data-label="Asumpte">Asumpte 1</td>
-                                <td data-label="Correu Electrònic">example@gmail.com</td>
-                                <td data-label="Data">25/08/2021</td>
-                                <td class="info" data-label="Informació">Lorem ipsum dolor porro et</td>
+                                <td data-label="Asumpte">Reunió important</td>
+                                <td data-label="Correu Electrònic">gerentslasafor@gmail.com</td>
+                                <td data-label="Data">23/02/2023</td>
+                                <td class="info" data-label="Informació">Recordar que tenim una reunió pròxima important</td>
                                 <td data-label="Estat">
                                     <label>
                                         <input type="checkbox" value="checked">
@@ -80,10 +80,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td data-label="Asumpte">Asumpte 1</td>
-                                <td data-label="Correu Electrònic">example@gmail.com</td>
-                                <td data-label="Data">25/08/2021</td>
-                                <td class="info" data-label="Informació">Lorem ipsum dolor porro et</td>
+                                <td data-label="Asumpte">Col·laboració</td>
+                                <td data-label="Correu Electrònic">arnaug03@gmail.com</td>
+                                <td data-label="Data">22/03/2024</td>
+                                <td class="info" data-label="Informació">Ens agradaría tindre una reunió per donar més informació</td>
                                 <td data-label="Estat">
                                     <label>
                                         <input type="checkbox" value="checked">
@@ -92,10 +92,46 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td data-label="Asumpte">Asumpte 1</td>
-                                <td data-label="Correu Electrònic">example@gmail.com</td>
-                                <td data-label="Data">25/08/2021</td>
-                                <td class="info" data-label="Informació">Lorem ipsum dolor porro et</td>
+                                <td data-label="Asumpte">Contacte amb administració</td>
+                                <td data-label="Correu Electrònic">jordigarcia932@gmail.com</td>
+                                <td data-label="Data">10/08/2021</td>
+                                <td class="info" data-label="Informació">M'agradaría contactar amb l'administració</td>
+                                <td data-label="Estat">
+                                    <label>
+                                        <input type="checkbox" value="checked">
+                                        Consulta Atesa
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Asumpte">Treball amb vosaltres</td>
+                                <td data-label="Correu Electrònic">josjor@gmail.com</td>
+                                <td data-label="Data">03/08/2021</td>
+                                <td class="info" data-label="Informació">M'agradaría contactar amb l'administració per poder parlar les opcions sobre el lloc de treball disponible</td>
+                                <td data-label="Estat">
+                                    <label>
+                                        <input type="checkbox" value="checked">
+                                        Consulta Atesa
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Asumpte">Reunió amb colaborador</td>
+                                <td data-label="Correu Electrònic">gestor@outlook.es</td>
+                                <td data-label="Data">13/02/2021</td>
+                                <td class="info" data-label="Informació">Recordar que hi ha una reunió pròximament</td>
+                                <td data-label="Estat">
+                                    <label>
+                                        <input type="checkbox" value="checked">
+                                        Consulta Atesa
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Asumpte">Recordatori</td>
+                                <td data-label="Correu Electrònic">gerentslasafor@gmail.com</td>
+                                <td data-label="Data">30/02/2021</td>
+                                <td class="info" data-label="Informació">Recentment vam estar en contacte i ens agradaría saber la decisió presa en la reunió</td>
                                 <td data-label="Estat">
                                     <label>
                                         <input type="checkbox" value="checked">

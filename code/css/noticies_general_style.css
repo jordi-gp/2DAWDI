@@ -140,7 +140,15 @@ body {
 .button_mes_info > button:hover {
     cursor: pointer;
     background-color: black;
+}
+
+.mes_info > a:hover {
     color: white;
+}
+
+.mes_info > a {
+    color: black;
+    text-decoration: none;
 }
 
 #noticia_1 {

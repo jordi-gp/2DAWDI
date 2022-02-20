@@ -129,6 +129,10 @@ body {
     background-color: var(--color-fondo-blocs);
 }
 
+#taules_gestio {
+    padding: 0 2em 0 2em;
+}
+
 table {
     border: 1px solid black;
     border-collapse: collapse;

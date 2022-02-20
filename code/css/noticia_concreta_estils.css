@@ -50,6 +50,7 @@ header {
 * Body *
 *******/
 body {
+    font-family: "Times New Roman";
     background-color: var(--color-menu);
 }
 
